@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {font-family: Arial, Helvetica, sans-serif;}
+    * {box-sizing: border-box}
+
+    /* Full-width input fields */
+    input[type=text], input[type=password] {
+      width: 100%;
+      padding: 16px;
+      margin: 5px 0 22px 0;
+      display: inline-block;
+      border: none;
+      background: #f1f1f1;
+      border-radius: 12px;
+    }
+
+    input[type=text]:focus, input[type=password]:focus {
+      background-color: #ddd;
+      outline: none;
+    }
+
+    /* Set a style for all buttons */
+    button {  
+      background-color: #4297FF;
+      color: white;
+      font-size: 20px;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      width: fit-content;
+      opacity: 0.9;
+      padding: 16px;
+      margin: 0 10px;
+      display: inline-block;
+    }
+
+    button:hover {
+      opacity: 1;
+    }
+
+    .bottom-buttons{
+      text-align: center;
+    }
+
+    .cancelbtn {
+      background-color: #f44336;
+    }
+  
+    /* Add padding to container elements */
+    .container {
+      padding: 16px;
+    }
+
+  </style>
+
+</head>
+<body>
+
+  <nav>
+    <div class="nav-left">
+
+      <a href="index.html">
+        <img src="https://img.icons8.com/color/96/000000/strength.png" class="logo"> <!--main logo-->
+      </a>
+
+      <ul> 
+        <li>
+          <a href="dashboard.html">
+            <img src="https://img.icons8.com/material/96/ffffff/dashboard-layout.png"> <!--dashboard tab image-->
+          </a>
+        </li>
+
+        <li>
+          <a href="socialfeed.html">
+            <img src="https://img.icons8.com/ios-filled/100/ffffff/conference-call.png"> <!--social tab image-->
+          </a>
+        </li>
+      
+        <li>
+          <a href="adddata.html">
+            <img src="https://img.icons8.com/ios-glyphs/30/ffffff/add--v1.png"> <!--add data tab image-->
+          </a>
+        </li>
+      </ul>
+
+    </div>
+    <div class="nav-right">
+
+      <a href="profile.html">
+        <img src="https://img.icons8.com/ios-glyphs/30/ffffff/user--v1.png" class="nav-user-icon online"> <!--user icon image-->
+      </a>
+
+      <a href="settings.html">
+        <img src="https://img.icons8.com/material-rounded/24/ffffff/settings.png" class="settings-icon">
+      </a>
+
+    </div>
+  </nav>
+
+  <form class="container">
+    <h1>Sign Up</h1>
+    <br>
+    <p>Please fill in this form to create an account.</p>
+    <br>
+
+    <label for="fname" class="fname"><b>First Name</b></label>
+    <input type="text" placeholder="Enter First Name" name="fname" required>
+
+    <label for="lname" class="lname"><b>Last Name</b></label>
+    <input type="text" placeholder="Enter Last Name" name="lname" required>
+
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <label for="psw-repeat"><b>Confirm Password</b></label>
+    <input type="password" placeholder="Confirm Password" name="psw-repeat" required>
+
+    <label>
+      <input type="checkbox" name="tos" style="margin-bottom: 15px;" required> By creating an account you agree to our <a href="tos.html" style="color:  #4297FF">Terms & Conditions</a>.
+    </label>
+
+    <div class="bottom-buttons">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <button type="submit" class="signupbtn">Sign Up</button>
+    </div>
+    <br>
+
+    <div class="login-link">
+      <p>Already have an account? <a href="login.html">Login</a>.</p>
+    </div>
+
+  </form>
+
+</body>
+</html>

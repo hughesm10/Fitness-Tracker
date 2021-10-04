@@ -1,0 +1,76 @@
+/* Colors:
+    Brilliant Azure: #4297FF
+    Crayola's Yellow: #FFDF85
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #efefef;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #4297FF;
+    padding: 5px 5%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+.nav-left, .nav-right{
+    display: flex;
+    align-items: center;
+}
+.nav-left ul li{
+    list-style: none;
+    display: inline-block;
+}
+.nav-left ul li img{
+    width: 28px;
+    margin: 0 15px;
+}
+.nav-user-icon img{
+    width: 40px;
+    border-radius: 50%;
+}
+.nav-user-icon{
+    margin-left: 20px;
+}
+.settings-icon{
+    margin-left: 20px;
+}
+
+.signup-button{
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 12px;
+    height: 40px;
+    line-height: 20px;
+    color: #FFFFFF;
+    width: 160px;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #4297FF;
+    border: solid #FFFFFF 2px;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;    
+}
+.signup-button:hover{
+    background-color: white;
+    color: #4297FF;
+ }
+ .login-link, .signup-link{
+    text-align: center;
+    font-weight: 600;
+ }
