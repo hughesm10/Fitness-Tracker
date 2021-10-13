@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitness Tracker</title>
+  <link rel="stylesheet" href="navbar.css">
+  <style>
+    body {margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif;}
+    * {box-sizing: border-box}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #FDBE34;
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Get started button */
+.getstarted-button{
+  border-radius: 12px;
+  height: 50px;   
+  width: 150px;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: #0B409C;
+  color: white;
+  border: solid white 2px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: whitesmoke;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #0D226B;
+  color: white;
+}
+  
+  </style>
+</head>
+<body>
+
+  <!---------navbar--------->
+  <nav>
+    <div class="nav-left">
+      <a href="index.html">
+        <img src="https://img.icons8.com/color/96/000000/strength.png"> <!--homepage logo-->
+      </a>
+
+      <a href="dashboard.html">
+        <img src="https://img.icons8.com/material/96/ffffff/dashboard-layout.png"> <!--dashboard tab image-->
+      </a>
+        
+      <a href="socialfeed.html">
+        <img src="https://img.icons8.com/ios-filled/100/ffffff/conference-call.png"> <!--social tab image-->
+      </a>
+        
+      <a href="settings.html">
+        <img src="https://img.icons8.com/material-rounded/24/ffffff/settings.png"> <!--settings tab image-->
+      </a>
+        
+      <a href="profile.html">
+        <img src="https://img.icons8.com/ios-glyphs/30/ffffff/user--v1.png"> <!--profile tab image-->
+      </a>
+    </div>
+
+    <div class="nav-right">
+      <form>  
+        <input type="button" value="Sign Up" onclick="window.location.href='signup.html'" class="signup-button"> <!--sign up button-->
+        <input type="button" value="Login" onclick="window.location.href='login.html'" class="login-button"> <!--login button-->
+      </form>
+    </div>
+  </nav>
+  <!---------end navbar----------->
+
+
+  <div class="header">
+    <h1>FITNESS TRACKER</h1>
+    <p>Track all your fitness needs!</p>
+    <input type="button" value="Get Started" onclick="window.location.href='signup.html'" class="getstarted-button"> <!--get started button-->
+  </div>
+  
+  <div class="row">
+    <div class="side">
+      <h2>News</h2>
+      <h5>Popular Topics</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+      <h3>Featured Exercises</h3>
+      <p>View the trending exercises.</p>
+      <div class="fakeimg" style="height:60px;">Image</div><br>
+      <div class="fakeimg" style="height:60px;">Image</div><br>
+      <div class="fakeimg" style="height:60px;">Image</div>
+    </div>
+    <div class="main">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Dec 7, 2017</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      <br>
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Sep 2, 2017</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+  </div>
+  
+  <div class="footer">
+    <h2>Fitness Tracker</h2>
+  </div>
+
+</body>
+</html>

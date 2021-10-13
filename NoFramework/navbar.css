@@ -9,6 +9,9 @@ nav{
     height: 80px;
     background: #0B409C;
     position: sticky;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    z-index: 100;
 }
 
 .nav-left a{

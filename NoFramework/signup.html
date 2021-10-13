@@ -2,9 +2,9 @@
 <html>
 <head>
   <title>Sign Up</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="navbar.css">
   <style>
-    body {font-family: Arial, Helvetica, sans-serif;}
+    body {margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif;}
     * {box-sizing: border-box}
 
     /* Full-width input fields */
@@ -60,47 +60,45 @@
 
 </head>
 <body>
+<!---------navbar--------->
+<nav>
+  <div class="nav-left">
+    <a href="index.html">
+      <img src="https://img.icons8.com/color/96/000000/strength.png">
+      <!--homepage logo-->
+    </a>
 
-  <nav>
-    <div class="nav-left">
+    <a href="dashboard.html">
+      <img src="https://img.icons8.com/material/96/ffffff/dashboard-layout.png">
+      <!--dashboard tab image-->
+    </a>
 
-      <a href="index.html">
-        <img src="https://img.icons8.com/color/96/000000/strength.png" class="logo"> <!--main logo-->
-      </a>
+    <a href="socialfeed.html">
+      <img src="https://img.icons8.com/ios-filled/100/ffffff/conference-call.png">
+      <!--social tab image-->
+    </a>
 
-      <ul> 
-        <li>
-          <a href="dashboard.html">
-            <img src="https://img.icons8.com/material/96/ffffff/dashboard-layout.png"> <!--dashboard tab image-->
-          </a>
-        </li>
+    <a href="settings.html">
+      <img src="https://img.icons8.com/material-rounded/24/ffffff/settings.png">
+      <!--settings tab image-->
+    </a>
 
-        <li>
-          <a href="socialfeed.html">
-            <img src="https://img.icons8.com/ios-filled/100/ffffff/conference-call.png"> <!--social tab image-->
-          </a>
-        </li>
-      
-        <li>
-          <a href="adddata.html">
-            <img src="https://img.icons8.com/ios-glyphs/30/ffffff/add--v1.png"> <!--add data tab image-->
-          </a>
-        </li>
-      </ul>
+    <a href="profile.html">
+      <img src="https://img.icons8.com/ios-glyphs/30/ffffff/user--v1.png">
+      <!--profile tab image-->
+    </a>
+  </div>
 
-    </div>
-    <div class="nav-right">
-
-      <a href="profile.html">
-        <img src="https://img.icons8.com/ios-glyphs/30/ffffff/user--v1.png" class="nav-user-icon online"> <!--user icon image-->
-      </a>
-
-      <a href="settings.html">
-        <img src="https://img.icons8.com/material-rounded/24/ffffff/settings.png" class="settings-icon">
-      </a>
-
-    </div>
-  </nav>
+  <div class="nav-right">
+    <form>
+      <input type="button" value="Sign Up" onclick="window.location.href='signup.html'" class="signup-button">
+      <!--sign up button-->
+      <input type="button" value="Login" onclick="window.location.href='login.html'" class="login-button">
+      <!--login button-->
+    </form>
+  </div>
+</nav>
+<!---------end navbar----------->
 
   <form class="container">
     <h1>Sign Up</h1>
