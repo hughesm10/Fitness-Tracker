@@ -4,260 +4,30 @@
     <title>Social Feed</title>
     <link rel="stylesheet" href="navbar.css">
     <style>
-      * {
-            box-sizing: border-box;
-        }
-    
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-img.profile-photo-md {
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-}
-
-/*==================================================
-  Create Post Box CSS
-  ==================================================*/
-
-.create-post{
-  width: 100%;
-  min-height: 90px;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-bottom: 1px solid #f1f2f2;
-}
-
-.create-post .form-group{
-  margin-bottom: 0;
-  display: inline-flex;
-}
-
-.create-post .form-group .form-control{
-  border: 1px solid #ccc;
-  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-}
-
-.create-post .form-group img.profile-photo-md{
-  margin-right: 10px;
-}
-
-.create-post .tools{
-  padding: 8px 0 10px;
-}
-
-.create-post .tools ul.publishing-tools{
-  display: inline-block;
-  text-align:left;
+      body {
   margin: 0;
-  padding:5px 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
-
-.create-post .tools ul.publishing-tools li a{
-  color: #6d6e71;
-  font-size: 18px;
-}
-
-.create-post .tools ul.publishing-tools li a:hover{
-  color: #27aae1;
-}
-
-.list-inline>li {
-    display: inline-block;
-    padding-right: 5px;
-    padding-left: 5px;
-}
-
-
-/*==================================================
-  Friend List CSS = Newsfeed and Timeline
-  ==================================================*/
-
-.friend-list .friend-card{
-  border-radius: 4px;
-  border-bottom: 1px solid #f1f2f2;
-  overflow: hidden;
-  margin-bottom: 20px;
-}
-
-.friend-list .friend-card .card-info{
-  padding: 0 20px 10px;
-}
-
-.friend-list .friend-card .card-info img.profile-photo-lg{
-  margin-top: -60px;
-  border: 7px solid #fff;
-}
-
-img.profile-photo-lg {
-    height: 80px;
-    width: 80px;
-    border-radius: 50%;
-}
-
-.text-green {
-    color: #8dc63f;
-}
+      
     </style>
-
 
 </head>
 <body>
-<!---------navbar--------->
-<nav>
-  <div class="nav-left">
-    <a href="index.html">
-      <img src="https://img.icons8.com/color/96/000000/strength.png">
-      <!--homepage logo-->
-    </a>
-
-    <a href="dashboard.html">
-      <img src="https://img.icons8.com/material/96/ffffff/dashboard-layout.png">
-      <!--dashboard tab image-->
-    </a>
-
-    <a href="socialfeed.html">
-      <img src="https://img.icons8.com/ios-filled/100/ffffff/conference-call.png">
-      <!--social tab image-->
-    </a>
-
-    <a href="settings.html">
-      <img src="https://img.icons8.com/material-rounded/24/ffffff/settings.png">
-      <!--settings tab image-->
-    </a>
-
-    <a href="profile.html">
-      <img src="https://img.icons8.com/ios-glyphs/30/ffffff/user--v1.png">
-      <!--profile tab image-->
-    </a>
+<!--start navbar-->
+<div class="topnav">
+  <a href="index.html"><img src="https://img.icons8.com/color/96/000000/strength.png" style="width: 60px;"></a>  <!--homepage logo-->
+  <a href="dashboard.html"><img src="https://img.icons8.com/material/96/ffffff/dashboard-layout.png" style="width: 60px;"></a>  <!--dashboard tab image-->
+  <a href="socialfeed.html"><img src="https://img.icons8.com/ios-filled/100/ffffff/conference-call.png" style="width: 60px;"></a>  <!--social tab image-->
+  <div class="topnav-right">
+      <a><input type="button" class="signup-button" value="Sign Up" onclick="location.href='signup.html';"></a>
+      <a><input type="button" class="login-button" value="Login" onclick="location.href='login.html';"></a>
+      <a href="profile.html"><img src="https://img.icons8.com/ios-glyphs/30/ffffff/user--v1.png" style="width: 60px;"></a>  <!--profile tab image-->
+      <a href="settings.html"><img src="https://img.icons8.com/ios-filled/50/ffffff/settings.png" style="width: 56px;"></a>  <!--settings tab image-->
   </div>
+</div>
+<!--end navbar-->
 
-  <div class="nav-right">
-    <form>
-      <input type="button" value="Sign Up" onclick="window.location.href='signup.html'" class="signup-button">
-      <!--sign up button-->
-      <input type="button" value="Login" onclick="window.location.href='login.html'" class="login-button">
-      <!--login button-->
-    </form>
-  </div>
-</nav>
-<!---------end navbar----------->
 
-      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-      <div class="container">
-          <div class="create-post">
-              <div class="row">
-                  <div class="col-md-8">
-                      <div class="row">
-                      <div class="col-md-7 col-sm-7">
-                            <div class="form-group">
-                              <img src="images/IMG_0162.JPG" class="img-thumbnail profile-photo-md" />
-                              <textarea name="texts" id="exampleTextarea" cols="30" rows="1" class="form-control" placeholder="Write what you wish"></textarea>
-                            </div>
-                          </div>
-                          <div class="col-md-5 col-sm-5">
-                            <div class="tools">
-                              <ul class="publishing-tools list-inline">
-                                <li><a href="#"><i class="fa fa-pencil-square-o"></i></a></li>
-                                <li><a href="#"><i class="fa fa-file-image-o"></i></a></li>
-                                <li><a href="#"><i class="fa fa-video-camera"></i></a></li>
-                                <li><a href="#"><i class="fa fa-map"></i></a></li>
-                              </ul>
-                              <button class="btn btn-primary pull-right">Publish</button>
-                            </div>
-                          </div>
-                    </div>
-                </div>
-            </div>
-          </div>
-          
-          <div class="friend-list">
-              <div class="row">
-                  <div class="col-md-4 col-sm-6">
-                    <div class="friend-card">
-                        <img src="images/canva-orange-ebb-and-flow-abstract-linkedin-banner-5YDmHwJk-Yc.jpg" alt="profile-cover" class="img-responsive cover" width="30%">
-                        <div class="card-info">
-                        <img src="images/0-6243_user-profile-avatar-scalable-vector-graphics-icon-woman.png" alt="user" class="profile-photo-lg">
-                        <div class="friend-info">
-                          <h5>Sophia Lee</h5>
-                          <p>Student at Harvard</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div class="col-md-4 col-sm-6">
-                    <div class="friend-card">
-                        <img src="images/canva-orange-ebb-and-flow-abstract-linkedin-banner-5YDmHwJk-Yc.jpg" alt="profile-cover" class="img-responsive cover" width="30%">
-                        <div class="card-info">
-                        <img src="images/0-6243_user-profile-avatar-scalable-vector-graphics-icon-woman.png" alt="user" class="profile-photo-lg">
-                        <div class="friend-info">
-                          
-                          <h5>Molly Solomon</h5>
-                          <p>Student at Yale</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div class="col-md-4 col-sm-6">
-                    <div class="friend-card">
-                        <img src="images/canva-orange-ebb-and-flow-abstract-linkedin-banner-5YDmHwJk-Yc.jpg" alt="profile-cover" class="img-responsive cover" width="30%">
-                        <div class="card-info">
-                        <img src="images/0-6243_user-profile-avatar-scalable-vector-graphics-icon-woman.png" alt="user" class="profile-photo-lg">
-                        <div class="friend-info">
-                          
-                          <h5>Susan Ruiz</h5>
-                          <p>Student at Princeton</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div class="col-md-4 col-sm-6">
-                    <div class="friend-card">
-                        <img src="images/canva-orange-ebb-and-flow-abstract-linkedin-banner-5YDmHwJk-Yc.jpg" alt="profile-cover" class="img-responsive cover" width="30%">
-                        <div class="card-info">
-                        <img src="images/0-6243_user-profile-avatar-scalable-vector-graphics-icon-woman.png" alt="user" class="profile-photo-lg">
-                        <div class="friend-info">
-                          <h5>Amy Rogers</h5>
-                          <p>Student at New Paltz</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div class="col-md-4 col-sm-6">
-                    <div class="friend-card">
-                        <img src="images/canva-orange-ebb-and-flow-abstract-linkedin-banner-5YDmHwJk-Yc.jpg" alt="profile-cover" class="img-responsive cover" width="30%">
-                        <div class="card-info">
-                        <img src="images/0-6243_user-profile-avatar-scalable-vector-graphics-icon-woman.png" alt="user" class="profile-photo-lg">
-                        <div class="friend-info">
-                          <h5>Nina Hancock</h5>
-                          <p>Student at Pace</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div class="col-md-4 col-sm-6">
-                    <div class="friend-card">
-                        <img src="images/canva-orange-ebb-and-flow-abstract-linkedin-banner-5YDmHwJk-Yc.jpg" alt="profile-cover" class="img-responsive cover" width="30%">
-                        <div class="card-info">
-                        <img src="images/0-6243_user-profile-avatar-scalable-vector-graphics-icon-woman.png" alt="user" class="profile-photo-lg">
-                        <div class="friend-info">
-                          <h5>Kim Arellano</h5>
-                          <p>Student at Harvard</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-              </div>
-          </div>
-      </div>
     
 </body>
 </html>

@@ -6,134 +6,154 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fitness Tracker</title>
   <link rel="stylesheet" href="navbar.css">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
-    body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
-
-body, html {
-  height: 100%;
-  line-height: 1.8;
+    body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Full height image header */
-.bgimg-1 {
-  background-position: center;
-  background-size: cover;
-  background-image: url("../images/8225.jpg");
-  height: 700px;
-  min-width: 100%;
+.header{
   position: relative;
-  top: -50px;
+  text-align: center;
+  color: black;
+  height: 100%;
+}
+
+.header img{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: -150px;
+}
+
+.header-text{
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 100px;
+  text-align: center;
+}
+
+.sub-text{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  text-align: center;
+  color: black;
+}
+
+.header-button{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  text-align: center;
+  border-radius: 12px;
+  height: fit-content;   
+  width: fit-content;
+  font-weight: 500;
+  background-color: #0B409C;
+  color: white;
+  border: solid white 2px;
+  cursor: pointer;
+  margin: 0;
+  padding: 10px;
+}
+
+.header-button:hover, .contact-button:hover{
+    background-color: white;
+    color: #0B409C;
 }
 
 .bottom-img{
-  height: 600px;
-  width: 100%;
+  height: 50%;
+  width: 50%;
   display: block;
   margin: auto;
 }
 
-.w3-bar .w3-button {
-  padding: 16px;
+.contact-button{
+  border-radius: 12px;
+    height: fit-content;   
+    width: fit-content;
+    font-size: 25px;
+    font-weight: 500;
+    background-color: #0B409C;
+    color: white;
+    border: solid white 2px;
+    cursor: pointer;
+    margin: 0;
+    padding: 10px;
 }
+
   </style>
 </head>
 <body>
 
-  <!---------navbar--------->
-  <nav>
-    <div class="nav-left">
-      <a href="index.html">
-        <img src="https://img.icons8.com/color/96/000000/strength.png"> <!--homepage logo-->
-      </a>
-
-      <a href="dashboard.html">
-        <img src="https://img.icons8.com/material/96/ffffff/dashboard-layout.png"> <!--dashboard tab image-->
-      </a>
-        
-      <a href="socialfeed.html">
-        <img src="https://img.icons8.com/ios-filled/100/ffffff/conference-call.png"> <!--social tab image-->
-      </a>
-        
-      <a href="settings.html">
-        <img src="https://img.icons8.com/ios-filled/50/ffffff/settings.png"/> <!--settings tab image-->
-      </a>  
-        
-      <a href="profile.html">
-        <img src="https://img.icons8.com/ios-glyphs/30/ffffff/user--v1.png"> <!--profile tab image-->
-      </a>
-    </div>
-
-    <div class="nav-right">
-      <form>  
-        <input type="button" value="Sign Up" onclick="window.location.href='signup.html'" class="signup-button"> <!--sign up button-->
-        <input type="button" value="Login" onclick="window.location.href='login.html'" class="login-button"> <!--login button-->
-      </form>
-    </div>
-  </nav>
-  <!---------end navbar----------->
-
-<!-- Header with full-height image -->
-<header class="bgimg-1">
-  <div style="padding:48px;color: black;position:absolute;top:50%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%);">
-    <span style="font-size: 64px;">Track something that matters</span><br>
-    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Start tracking something that matters</span><br>
-    <span class="w3-large">Stop wasting valuable time with projects that just isn't you.</span>
-    <p><a href="../NoFramework/signup.html"
-        class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Get started now</a></p>
+  <!--start navbar-->
+<div class="topnav">
+  <a href="index.html"><img src="https://img.icons8.com/color/96/000000/strength.png" style="width: 60px;"></a>  <!--homepage logo-->
+  <a href="dashboard.html"><img src="https://img.icons8.com/material/96/ffffff/dashboard-layout.png" style="width: 60px;"></a>  <!--dashboard tab image-->
+  <a href="socialfeed.html"><img src="https://img.icons8.com/ios-filled/100/ffffff/conference-call.png" style="width: 60px;"></a>  <!--social tab image-->
+  <div class="topnav-right">
+      <a><input type="button" class="signup-button" value="Sign Up" onclick="location.href='signup.html';"></a>
+      <a><input type="button" class="login-button" value="Login" onclick="location.href='login.html';"></a>
+      <a href="profile.html"><img src="https://img.icons8.com/ios-glyphs/30/ffffff/user--v1.png" style="width: 60px;"></a>  <!--profile tab image-->
+      <a href="settings.html"><img src="https://img.icons8.com/ios-filled/50/ffffff/settings.png" style="width: 56px;"></a>  <!--settings tab image-->
   </div>
-</header>
+</div>
+<!--end navbar-->
+
+<div class="header">
+  <img src="../images/8225.jpg">
+  <p class="header-text">FITNESS TRACKER</p>
+  <p class="sub-text">Track all your fitness needs!</p>
+  <input type="button" class="header-button" value="Get Started" onclick="location.href='signup.html';">
+</div>
 
 <!-- About Section -->
-<div style="padding:40px;">
+<div style="padding: 20px;">
   <h3 style="text-align: center; display: inline-block; width: 100%;">ABOUT FITNESS TRACKER</h3>
   <p style="text-align: center; display: inline-block; width: 100%; font-size: 18px;">Key features of the website</p>
-  <div class="w3-row-padding w3-center" style="margin-top:64px">
-    <div class="w3-quarter">
-      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
-      <p class="w3-large">Dashboard</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
-      </p>
+  <div style="margin-top:64px; padding: 0 8px; text-align: center;">
+    <div style="width: 33%; float: left;">
+      <img src="https://img.icons8.com/ios/50/000000/dashboard.png"/>
+      <p style="font-size: 36px;">Dashboard</p>
+      <p>See all your data in one central spot on the Dashboard page.</p>
     </div>
-    <div class="w3-quarter">
-      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large">Passion</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
-      </p>
+    <div style="width: 33%; float: left;">
+      <img src="https://img.icons8.com/external-sbts2018-solid-sbts2018/58/000000/external-social-network-social-media-sbts2018-solid-sbts2018.png"/>
+      <p style="font-size: 36px;">Social Feed</p>
+      <p>Connect and compete with your friends to reach new goals.</p>
     </div>
-    <div class="w3-quarter">
-      <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large">Design</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
-      </p>
-    </div>
-    <div class="w3-quarter">
-      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large">Support</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
-      </p>
+    <div style="width: 33%; float: left;">
+      <img src="https://img.icons8.com/external-flatart-icons-flat-flatarticons/64/000000/external-goals-user-interface-flatart-icons-flat-flatarticons.png"/>
+      <p style="font-size: 36px;">Create Goals</p>
+      <p>Set goals to reach and mark your progression.</p>
     </div>
   </div>
 </div>
 
 <!-- Promo Section "Statistics" -->
-<div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
-  <div class="w3-quarter">
-    <span class="w3-xxlarge">14+</span>
+<div style="background-color: #0B409C; color: white; padding-top: 64px; padding-bottom: 64px; text-align: center; display: inline-block; width: 100%;">
+  <div style="width: 25%; float: left;">
+    <span style="font-size: 36px;">14+</span>
     <br>Trainers
   </div>
-  <div class="w3-quarter">
-    <span class="w3-xxlarge">55+</span>
+  <div style="width: 25%; float: left;">
+    <span style="font-size: 36px;">55+</span>
     <br>Exercises
   </div>
-  <div class="w3-quarter">
-    <span class="w3-xxlarge">89+</span>
+  <div style="width: 25%; float: left;">
+    <span style="font-size: 36px;">89+</span>
     <br>Members
   </div>
-  <div class="w3-quarter">
-    <span class="w3-xxlarge">150+</span>
+  <div style="width: 25%; float: left;">
+    <span style="font-size: 36px;">150+</span>
     <br>Goals Met
   </div>
 </div>
@@ -143,16 +163,16 @@ body, html {
 </div>
 
 <!-- Contact Us section -->
-<div style="color: black; background-color: lightgray; text-align: center; display: inline-block; width: 100%; height: 180px;">
+<div style="color: black; background-color: #FDBE34; text-align: center; display: inline-block; width: 100%; height: 180px;">
   <div>
     <h3>Conact Us</h3>
     <p>Let's get in touch. Send us a message:</p>
-    <p><a href="../NoFramework/contact.html" class="w3-button w3-black">Contact Us</a></p>
+    <input type="button" class="contact-button" value="Contact Us" onclick="location.href='contact.html';">
   </div>
 </div>
 
 <!-- Footer -->
-<footer style="display: inline-block; width: 100%; text-align: center; color: white; background-color: black; padding-top: 30px; padding-bottom: 64px;">
+<footer style="display: inline-block; width: 100%; text-align: center; color: white; background-color: #0D226B; padding-top: 30px; padding-bottom: 64px;">
   <p style="font-size: 40px;">Fitness Tracker</p>
 </footer>
 

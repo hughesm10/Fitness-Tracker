@@ -4,45 +4,42 @@
     Dark Blue: #0D226B
 */
 
-nav{
-    top: 0;
-    height: 80px;
-    background: #0B409C;
+.topnav {
+    overflow: hidden;
+    background-color: #0B409C;
+    height: 100px;
     position: sticky;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
+    top: 0;
     z-index: 100;
 }
 
-.nav-left a{
+.topnav a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
+    font-size: 17px;
 }
 
-.nav-left a img{
-    width: 40px;
-    margin: 20px;
-}
-
-.nav-right{
-    top: 10px;
-    right: 10px;
-    position: absolute;
+.topnav-right {
+    float: right;
 }
 
 .signup-button, .login-button{
     border-radius: 12px;
-    height: 40px;   
-    width: 100px;
-    font-size: 20px;
+    height: 60px;   
+    width: 120px;
+    font-size: 25px;
     font-weight: 500;
     background-color: #0B409C;
     color: white;
     border: solid white 2px;
     cursor: pointer;
-    margin: 10px;
+    margin: 0;
 }
 
 .signup-button:hover, .login-button:hover{
     background-color: white;
     color: #0B409C;
- }
+}
