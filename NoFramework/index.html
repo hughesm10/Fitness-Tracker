@@ -6,77 +6,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fitness Tracker</title>
   <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
-    body {margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif;}
-    * {box-sizing: border-box}
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
-/* Header/logo Title */
-.header {
-  padding: 80px;
-  text-align: center;
-  background: #FDBE34;
-  color: white;
+body, html {
+  height: 100%;
+  line-height: 1.8;
 }
 
-/* Increase the font size of the heading */
-.header h1 {
-  font-size: 40px;
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("../images/8225.jpg");
+  height: 700px;
+  min-width: 100%;
+  position: relative;
+  top: -50px;
 }
 
-/* Get started button */
-.getstarted-button{
-  border-radius: 12px;
-  height: 50px;   
-  width: 150px;
-  font-size: 20px;
-  font-weight: 500;
-  background-color: #0B409C;
-  color: white;
-  border: solid white 2px;
-  cursor: pointer;
-  margin: 10px;
-}
-
-/* Column container */
-.row {  
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-}
-
-/* Create two unequal columns that sits next to each other */
-/* Sidebar/left column */
-.side {
-  -ms-flex: 30%; /* IE10 */
-  flex: 30%;
-  background-color: whitesmoke;
-  padding: 20px;
-}
-
-/* Main column */
-.main {   
-  -ms-flex: 70%; /* IE10 */
-  flex: 70%;
-  background-color: white;
-  padding: 20px;
-}
-
-/* Fake image, just for this example */
-.fakeimg {
-  background-color: #aaa;
+.bottom-img{
+  height: 600px;
   width: 100%;
-  padding: 20px;
+  display: block;
+  margin: auto;
 }
 
-/* Footer */
-.footer {
-  padding: 20px;
-  text-align: center;
-  background: #0D226B;
-  color: white;
+.w3-bar .w3-button {
+  padding: 16px;
 }
-  
   </style>
 </head>
 <body>
@@ -97,8 +58,8 @@
       </a>
         
       <a href="settings.html">
-        <img src="https://img.icons8.com/material-rounded/24/ffffff/settings.png"> <!--settings tab image-->
-      </a>
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/settings.png"/> <!--settings tab image-->
+      </a>  
         
       <a href="profile.html">
         <img src="https://img.icons8.com/ios-glyphs/30/ffffff/user--v1.png"> <!--profile tab image-->
@@ -114,45 +75,86 @@
   </nav>
   <!---------end navbar----------->
 
+<!-- Header with full-height image -->
+<header class="bgimg-1">
+  <div style="padding:48px;color: black;position:absolute;top:50%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%);">
+    <span style="font-size: 64px;">Track something that matters</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Start tracking something that matters</span><br>
+    <span class="w3-large">Stop wasting valuable time with projects that just isn't you.</span>
+    <p><a href="../NoFramework/signup.html"
+        class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Get started now</a></p>
+  </div>
+</header>
 
-  <div class="header">
-    <h1>FITNESS TRACKER</h1>
-    <p>Track all your fitness needs!</p>
-    <input type="button" value="Get Started" onclick="window.location.href='signup.html'" class="getstarted-button"> <!--get started button-->
-  </div>
-  
-  <div class="row">
-    <div class="side">
-      <h2>News</h2>
-      <h5>Popular Topics</h5>
-      <div class="fakeimg" style="height:200px;">Image</div>
-      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-      <h3>Featured Exercises</h3>
-      <p>View the trending exercises.</p>
-      <div class="fakeimg" style="height:60px;">Image</div><br>
-      <div class="fakeimg" style="height:60px;">Image</div><br>
-      <div class="fakeimg" style="height:60px;">Image</div>
+<!-- About Section -->
+<div style="padding:40px;">
+  <h3 style="text-align: center; display: inline-block; width: 100%;">ABOUT FITNESS TRACKER</h3>
+  <p style="text-align: center; display: inline-block; width: 100%; font-size: 18px;">Key features of the website</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">Dashboard</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+      </p>
     </div>
-    <div class="main">
-      <h2>TITLE HEADING</h2>
-      <h5>Title description, Dec 7, 2017</h5>
-      <div class="fakeimg" style="height:200px;">Image</div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-      <br>
-      <h2>TITLE HEADING</h2>
-      <h5>Title description, Sep 2, 2017</h5>
-      <div class="fakeimg" style="height:200px;">Image</div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <div class="w3-quarter">
+      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Passion</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+      </p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Design</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+      </p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Support</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+      </p>
     </div>
   </div>
-  
-  <div class="footer">
-    <h2>Fitness Tracker</h2>
+</div>
+
+<!-- Promo Section "Statistics" -->
+<div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">14+</span>
+    <br>Trainers
   </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">55+</span>
+    <br>Exercises
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">89+</span>
+    <br>Members
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">150+</span>
+    <br>Goals Met
+  </div>
+</div>
+
+<div>
+  <img class="bottom-img" src="../images/11101.jpg">
+</div>
+
+<!-- Contact Us section -->
+<div style="color: black; background-color: lightgray; text-align: center; display: inline-block; width: 100%; height: 180px;">
+  <div>
+    <h3>Conact Us</h3>
+    <p>Let's get in touch. Send us a message:</p>
+    <p><a href="../NoFramework/contact.html" class="w3-button w3-black">Contact Us</a></p>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer style="display: inline-block; width: 100%; text-align: center; color: white; background-color: black; padding-top: 30px; padding-bottom: 64px;">
+  <p style="font-size: 40px;">Fitness Tracker</p>
+</footer>
 
 </body>
 </html>

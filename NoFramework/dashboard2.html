@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+    
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: white;
+        }
+    
+        /* The grid: Three equal columns that floats next to each other */
+        .column {
+            background-color:#333;
+    padding:20px;
+    border-radius:10px;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:40px;
+    font-family:sans-serif;
+    cursor: pointer;
+        }
+    
+        .containerTab {
+            padding: 20px;
+            color: white;
+        }
+
+        .row{
+            margin: 0px;
+  width:400px;
+  height:400px;
+  display:grid;
+  grid-template-columns: 200px 200px;
+  grid-row: auto auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+        }
+    
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    
+        /* Closable button inside the container tab */
+        .closebtn {
+            float: right;
+            color: white;
+            font-size: 35px;
+            cursor: pointer;
+        }
+    </style>
+
+    <body>
+
+        <!---------navbar--------->
+        <nav>
+            <div class="nav-left">
+                <a href="index.html">
+                    <img src="https://img.icons8.com/color/96/000000/strength.png">
+                    <!--homepage logo-->
+                </a>
+        
+                <a href="dashboard.html">
+                    <img src="https://img.icons8.com/material/96/ffffff/dashboard-layout.png">
+                    <!--dashboard tab image-->
+                </a>
+        
+                <a href="socialfeed.html">
+                    <img src="https://img.icons8.com/ios-filled/100/ffffff/conference-call.png">
+                    <!--social tab image-->
+                </a>
+        
+                <a href="settings.html">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/settings.png" />
+                    <!--settings tab image-->
+                </a>
+        
+                <a href="profile.html">
+                    <img src="https://img.icons8.com/ios-glyphs/30/ffffff/user--v1.png">
+                    <!--profile tab image-->
+                </a>
+            </div>
+        
+            <div class="nav-right">
+                <form>
+                    <input type="button" value="Sign Up" onclick="window.location.href='signup.html'" class="signup-button">
+                    <!--sign up button-->
+                    <input type="button" value="Login" onclick="window.location.href='login.html'" class="login-button">
+                    <!--login button-->
+                </form>
+            </div>
+        </nav>
+        <!---------end navbar----------->
+
+        <!-- !PAGE CONTENT! -->
+        <div class="w3-main" style="margin-top:43px;">
+
+            <!-- Header -->
+            <header class="w3-container" style="padding-top:22px">
+                <h5><b><i class="fa fa-dashboard"></i> My Dashboard</b></h5>
+            </header>
+
+            <!-- Four columns -->
+            <div class="row">
+                <div class="column" onclick="openTab('b1');" style="background-color: purple;">
+                    Box 1
+                </div>
+                <div class="column" onclick="openTab('b2');" style="background-color: green;">
+                    Box 2
+                </div>
+                <div class="column" onclick="openTab('b3');" style="background-color: orange;">
+                    Box 3
+                </div>
+                <div class="column" onclick="openTab('b4');" style="background-color: pink;">
+                    Box 4
+                </div>
+            </div>
+            
+            <!-- Full-width columns: (hidden by default) -->
+            <div id="b1" class="containerTab" style="display:none;background: purple">
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                <h2>Box 1</h2>
+                <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis
+                    ullamcorper nam. Ius error diceret deseruisse ad</p>
+            </div>
+            
+            <div id="b2" class="containerTab" style="display:none;background: green">
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                <h2>Box 2</h2>
+                <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis
+                    ullamcorper nam. Ius error diceret deseruisse ad</p>
+            </div>
+            
+            <div id="b3" class="containerTab" style="display:none;background: orange">
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                <h2>Box 3</h2>
+                <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis
+                    ullamcorper nam. Ius error diceret deseruisse ad</p>
+            </div>
+            
+            <div id="b4" class="containerTab" style="display:none;background: pink">
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                <h2>Box 4</h2>
+                <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis
+                    ullamcorper nam. Ius error diceret deseruisse ad</p>
+            </div>
+
+            <div class="w3-panel">
+                <div class="w3-row-padding" style="margin:0 -16px">
+                    <div class="w3-twothird">
+                        <h5>Feeds</h5>
+                        <table class="w3-table w3-striped w3-white">
+                            <tr>
+                                <td><i class="fa fa-user w3-text-blue w3-large"></i></td>
+                                <td>New record, over 90 views.</td>
+                                <td><i>10 mins</i></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa fa-bell w3-text-red w3-large"></i></td>
+                                <td>Database error.</td>
+                                <td><i>15 mins</i></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa fa-users w3-text-yellow w3-large"></i></td>
+                                <td>New record, over 40 users.</td>
+                                <td><i>17 mins</i></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa fa-comment w3-text-red w3-large"></i></td>
+                                <td>New comments.</td>
+                                <td><i>25 mins</i></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa fa-bookmark w3-text-blue w3-large"></i></td>
+                                <td>Check transactions.</td>
+                                <td><i>28 mins</i></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa fa-laptop w3-text-red w3-large"></i></td>
+                                <td>CPU overload.</td>
+                                <td><i>35 mins</i></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa fa-share-alt w3-text-green w3-large"></i></td>
+                                <td>New shares.</td>
+                                <td><i>39 mins</i></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="w3-container">
+                <h5>General Stats</h5>
+                <p>New Visitors</p>
+                <div class="w3-grey">
+                    <div class="w3-container w3-center w3-padding w3-green" style="width:25%">+25%</div>
+                </div>
+
+                <p>New Users</p>
+                <div class="w3-grey">
+                    <div class="w3-container w3-center w3-padding w3-orange" style="width:50%">50%</div>
+                </div>
+
+                <p>Bounce Rate</p>
+                <div class="w3-grey">
+                    <div class="w3-container w3-center w3-padding w3-red" style="width:75%">75%</div>
+                </div>
+            </div>
+            <hr>
+
+            <div class="w3-container">
+                <h5>Countries</h5>
+                <table class="w3-table w3-striped w3-bordered w3-border w3-hoverable w3-white">
+                    <tr>
+                        <td>United States</td>
+                        <td>65%</td>
+                    </tr>
+                    <tr>
+                        <td>UK</td>
+                        <td>15.7%</td>
+                    </tr>
+                    <tr>
+                        <td>Russia</td>
+                        <td>5.6%</td>
+                    </tr>
+                    <tr>
+                        <td>Spain</td>
+                        <td>2.1%</td>
+                    </tr>
+                    <tr>
+                        <td>India</td>
+                        <td>1.9%</td>
+                    </tr>
+                    <tr>
+                        <td>France</td>
+                        <td>1.5%</td>
+                    </tr>
+                </table><br>
+                <button class="w3-button w3-dark-grey">More Countries  <i class="fa fa-arrow-right"></i></button>
+            </div>
+            
+        <script>
+            // Get the Sidebar
+            var mySidebar = document.getElementById("mySidebar");
+
+            // Get the DIV with overlay effect
+            var overlayBg = document.getElementById("myOverlay");
+
+            // Toggle between showing and hiding the sidebar, and add overlay effect
+            function w3_open() {
+                if (mySidebar.style.display === 'block') {
+                    mySidebar.style.display = 'none';
+                    overlayBg.style.display = "none";
+                } else {
+                    mySidebar.style.display = 'block';
+                    overlayBg.style.display = "block";
+                }
+            }
+
+            // Close the sidebar with the close button
+            function w3_close() {
+                mySidebar.style.display = "none";
+                overlayBg.style.display = "none";
+            }
+
+            function openTab(tabName) {
+                    var i, x;
+                    x = document.getElementsByClassName("containerTab");
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    document.getElementById(tabName).style.display = "block";
+                }
+        </script>
+
+    </body>
+
+</html>
