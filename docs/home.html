@@ -33,21 +33,22 @@
   transform: translate(-50%, -50%);
   font-size: 60px;
   text-align: center;
+  color: #FDBE34;
 }
 
 .sub-text{
   position: absolute;
-  top: 35%;
+  top: 32%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 40px;
   text-align: center;
-  color: black;
+  color: #FDBE34;
 }
 
 .header-button{
   position: absolute;
-  top: 50%;
+  top: 42%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 30px;
@@ -96,17 +97,25 @@
 
 <!--start navbar-->
 <div class="topnav">
-  <a href="index.html"><img src="https://img.icons8.com/color/96/000000/strength.png" style="width: 30px;"></a>  <!--homepage logo-->
-  <a href="dashboard.html"><img src="https://img.icons8.com/material/96/ffffff/dashboard-layout.png" style="width: 30px;"></a>  <!--dashboard tab image-->
-  <a href="socialfeed.html"><img src="https://img.icons8.com/ios-filled/100/ffffff/conference-call.png" style="width: 30px;"></a>  <!--social tab image-->
+  <a href="index.html"><img src="https://img.icons8.com/color/96/000000/strength.png" style="width: 40px;"></a>  <!--homepage logo-->
+  <a href="dashboard.html"><img src="https://img.icons8.com/material/96/ffffff/dashboard-layout.png" style="width: 40px;"></a>  <!--dashboard tab image-->
+  <a href="socialfeed.html"><img src="https://img.icons8.com/ios-filled/100/ffffff/conference-call.png" style="width: 40px;"></a>  <!--social tab image-->
   <div class="topnav-right">
       <a><input type="button" class="signup-button" value="Sign Up" onclick="location.href='signup.html';"></a>
       <a><input type="button" class="login-button" value="Login" onclick="location.href='login.html';"></a>
-      <a href="profile.html"><img src="https://img.icons8.com/ios-glyphs/30/ffffff/user--v1.png" style="width: 30px;"></a>  <!--profile tab image-->
-      <a href="settings.html"><img src="https://img.icons8.com/ios-filled/50/ffffff/settings.png" style="width: 30px;"></a>  <!--settings tab image-->
+      <div class="dropdown" style="float:right;">
+        <div>
+          <img class="dropbtn" src="https://img.icons8.com/external-kiranshastry-solid-kiranshastry/64/ffffff/external-user-interface-kiranshastry-solid-kiranshastry.png">
+        </div>
+        <div class="dropdown-content">
+          <a href="settings.html">Settings</a>
+          <a href="#">Log out</a>
+        </div>
+      </div>
   </div>
 </div>
 <!--end navbar-->
+
 
 <div class="header">
   <img src="../NoFramework/images/8225.jpg">
