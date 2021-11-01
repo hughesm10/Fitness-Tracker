@@ -1,3 +1,25 @@
+<?php
+session_start();
+
+  include("connection.php");
+  include("functions.php");
+
+  if($_SERVER['REQUEST_METHOD'] == "POST")
+  {
+    //something was posted
+    $uname = $_POST['uname'];
+    $password = $_POST['psw'];
+
+    if(!empty($uname) && !empty($password) && !is_numeric($uname))
+    {
+      $query = "insert into users (uid, uname, password) values ()"
+    }else {
+      echo "Please enter some valid information!";
+    }
+  }
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -80,7 +102,7 @@
 </div>
 <!--end navbar-->
 
-  <form class="container">
+  <form method="post" class="container">
     <h1>Sign Up</h1>
     <br>
     <p>Please fill in this form to create an account.</p>

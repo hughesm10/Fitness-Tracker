@@ -1,3 +1,7 @@
+<?php
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -79,7 +83,7 @@
 </div>
 <!--end navbar-->
 
-  <form class="container">
+  <form method="post" class="container">
     <h1>Login</h1>
     <br>
     <p>Please fill in this form to login.</p>
