@@ -1,12 +1,40 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Contact</title>
-        <link rel="stylesheet" href="navbar.css">
-        <style>
-            body {margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif;}
-        * {box-sizing: border-box}
-            /* Full-width input fields */
+<html lang="en">
+<head>
+  <title>Contact</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <link rel="stylesheet" href="css/navbar.css">
+</head>
+<body>
+
+<?php
+  include_once 'header.php';
+?>
+
+  <form method="post" class="container">
+    <h1>Contact</h1>
+    <p>Please fill in this form to contact us.</p>
+    <br>
+
+    <label for="email"><b>Email</b></label><br>
+    <input type="email" placeholder="Enter Email" name="email" id="email" required><br>
+
+    <label for="message"><b>Message</b></label><br>
+    <textarea placeholder="Enter Message" name="message" id="message" required></textarea><br>
+
+    <div class="bottom-buttons">
+      <button type="button" class="cancelbtn" onclick="document.getElementById('email').value = ''; document.getElementById('message').value = '';">Cancel</button>
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+  
+  <style>
+    body {margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif;}
+    * {box-sizing: border-box}
+
+    /* Full-width input fields */
     input[type=email] {
       width: 50%;
       padding: 15px;
@@ -24,16 +52,16 @@
     }
 
     textarea { 
-        width: 50%;
-        padding: 15px;
-        margin: 5px 0 22px 0;
-        display: inline-block;
-        border: none;
-        background: white;
-        border-radius: 12px;
-        height:  150px;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 16px;
+      width: 50%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      display: inline-block;
+      border: none;
+      background: white;
+      border-radius: 12px;
+      height:  150px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
     }
 
     /* Set a style for all buttons */
@@ -51,7 +79,7 @@
       display: inline-block;
     }
 
-    .bottom-buttons{
+    .bottom-buttons {
       text-align: center;
     }
 
@@ -63,10 +91,11 @@
       text-align: center;
       background-color: #0D226B;
       color: white;
-      border-radius: 12px;
+      border-radius: 20px;
       width: 50%;
       margin: auto;
-      margin-top: 20px;
+      margin-top: 40px;
+      margin-bottom: 40px;
       padding: 20px;
     }
 
@@ -76,65 +105,8 @@
       text-align: left;
     }
 
-        </style>
+  </style>
 
-
-    </head>
-
-    <body>
-        <!--start navbar-->
-<div class="topnav">
-  <a href="index.php"><img src="https://img.icons8.com/color/96/000000/strength.png" style="width: 40px;"></a>  <!--homepage logo-->
-  <a href="dashboard.php"><img src="https://img.icons8.com/material/96/ffffff/dashboard-layout.png" style="width: 40px;"></a>  <!--dashboard tab image-->
-  <a href="socialfeed.php"><img src="https://img.icons8.com/ios-filled/100/ffffff/conference-call.png" style="width: 40px;"></a>  <!--social tab image-->
-  <div class="topnav-right">
-    <?php
-      if(isset($_SESSION["userid"]))
-      {
-    ?>
-      <div class="dropdown" style="float:right;">
-        <div>
-          <img class="dropbtn" src="https://img.icons8.com/external-kiranshastry-solid-kiranshastry/64/ffffff/external-user-interface-kiranshastry-solid-kiranshastry.png">
-        </div>
-        <div class="dropdown-content">
-          <a href="profile.php">Profile</a>
-          <a href="settings.php">Settings</a>
-          <a href="#">Log out</a>
-        </div>
-      </div>
-    <?php
-      }
-      else
-      {
-    ?>
-      <a><input type="button" class="signup-button" value="Sign Up" onclick="location.href='signup.php';"></a>
-      <a><input type="button" class="login-button" value="Login" onclick="location.href='login.php';"></a>
-    <?php
-      }
-    ?>
-
-  </div>
-</div>
-<!--end navbar-->
-
-        <form method="post" class="container">
-            <h1>Contact</h1>
-            <p>Please fill in this form to contact us.</p>
-            <br>
-        
-            <label for="email"><b>Email</b></label><br>
-            <input type="email" placeholder="Enter Email" name="email" id="email" required><br>
-        
-            <label for="message"><b>Message</b></label><br>
-            <textarea placeholder="Enter Message" name="message" id="message" required></textarea><br>
-        
-            <div class="bottom-buttons">
-              <button type="button" class="cancelbtn" onclick="document.getElementById('email').value = ''; document.getElementById('message').value = '';">Cancel</button>
-              <button type="submit">Submit</button>
-            </div>
-        
-          </form>
-
-    </body>
-
-</html>
+<?php
+  include_once 'footer.php';
+?>

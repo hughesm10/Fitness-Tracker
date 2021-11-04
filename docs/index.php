@@ -5,126 +5,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-  <link rel="stylesheet" href="navbar.css">
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-    }
-
-.header img {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-.header-text {
-  position: absolute;
-  top: 12%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 60px;
-  text-align: center;
-  color: #FDBE34;
-}
-
-.sub-text {
-  position: absolute;
-  top: 22%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 35px;
-  text-align: center;
-  color: #FDBE34;
-}
-
-.header-button {
-  position: absolute;
-  top: 34%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 25px;
-  text-align: center;
-  border-radius: 12px;
-  height: fit-content;   
-  width: fit-content;
-  font-weight: 500;
-  background-color: #0B409C;
-  color: white;
-  border: solid #0B409C 4px;
-  cursor: pointer;
-  margin: 0;
-  padding: 10px;
-}
-
-.header-button:hover, .contact-button:hover {
-  font-size: 25px;
-  font-weight: 500;
-  background-color: white;
-  color: #0B409C;
-}
-
-.bottom-img{
-  height: 50%;
-  width: 50%;
-  display: block;
-  margin: auto;
-}
-
-.contact-button{
-  border-radius: 12px;
-    height: fit-content;   
-    width: fit-content;
-    font-size: 25px;
-    font-weight: 500;
-    background-color: #0B409C;
-    color: white;
-    border: solid #0B409C 4px;
-    cursor: pointer;
-    margin: 0;
-    padding: 10px;
-}
-
-  </style>
+  <link rel="stylesheet" href="css/navbar.css">
 </head>
 <body>
 
-<!--start navbar-->
-<div class="topnav">
-  <a href="index.php"><img src="https://img.icons8.com/color/96/000000/strength.png" style="width: 40px;"></a>  <!--homepage logo-->
-  <a href="dashboard.php"><img src="https://img.icons8.com/material/96/ffffff/dashboard-layout.png" style="width: 40px;"></a>  <!--dashboard tab image-->
-  <a href="socialfeed.php"><img src="https://img.icons8.com/ios-filled/100/ffffff/conference-call.png" style="width: 40px;"></a>  <!--social tab image-->
-  <div class="topnav-right">
-    <?php
-      if(isset($_SESSION["userid"]))
-      {
-    ?>
-      <div class="dropdown" style="float:right;">
-        <div>
-          <img class="dropbtn" src="https://img.icons8.com/external-kiranshastry-solid-kiranshastry/64/ffffff/external-user-interface-kiranshastry-solid-kiranshastry.png">
-        </div>
-        <div class="dropdown-content">
-          <a href="profile.php">Profile</a>
-          <a href="settings.php">Settings</a>
-          <a href="logoutinc.php">Log out</a>
-        </div>
-      </div>
-    <?php
-      }
-      else
-      {
-    ?>
-      <a><input type="button" class="signup-button" value="Sign Up" onclick="location.href='signup.php';"></a>
-      <a><input type="button" class="login-button" value="Login" onclick="location.href='login.php';"></a>
-    <?php
-      }
-    ?>
-
-  </div>
-</div>
-<!--end navbar-->
-
-<div class="wrapper">
+<?php
+  include_once 'header.php';
+?>
 
   <div class="header">
     <img src="img/8225.jpg">
@@ -191,11 +78,83 @@
     </div>
   </div>
 
-</div>
-<!-- Footer -->
-<footer style="display: inline-block; width: 100%; text-align: center; color: white; background-color: #0D226B; padding-top: 30px; padding-bottom: 64px;">
-  <p style="font-size: 40px;">Fitness Tracker</p>
-</footer>
+  <style>
+    body {margin: 0; font-family: Arial, Helvetica, sans-serif;}
 
-</body>
-</html>
+    .header img {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    .header-text {
+      position: absolute;
+      top: 12%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 60px;
+      text-align: center;
+      color: #FDBE34;
+    }
+
+    .sub-text {
+      position: absolute;
+      top: 22%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 35px;
+      text-align: center;
+      color: #FDBE34;
+    }
+
+    .header-button {
+      position: absolute;
+      top: 34%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 25px;
+      text-align: center;
+      border-radius: 12px;
+      height: fit-content;   
+      width: fit-content;
+      font-weight: 500;
+      background-color: #0B409C;
+      color: white;
+      border: solid #0B409C 4px;
+      cursor: pointer;
+      margin: 0;
+      padding: 10px;
+    }
+
+    .header-button:hover, .contact-button:hover {
+      font-size: 25px;
+      font-weight: 500;
+      background-color: white;
+      color: #0B409C;
+    }
+
+    .bottom-img {
+      height: 50%;
+      width: 50%;
+      display: block;
+      margin: auto;
+    }
+
+    .contact-button {
+      border-radius: 12px;
+      height: fit-content;   
+      width: fit-content;
+      font-size: 25px;
+      font-weight: 500;
+      background-color: #0B409C;
+      color: white;
+      border: solid #0B409C 4px;
+      cursor: pointer;
+      margin: 0;
+      padding: 10px;
+    }
+  </style>
+
+<?php
+  include_once 'footer.php';
+?>

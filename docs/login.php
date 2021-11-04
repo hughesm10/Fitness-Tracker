@@ -1,8 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <title>Login</title>
-  <link rel="stylesheet" href="navbar.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <link rel="stylesheet" href="css/navbar.css">
+</head>
+<body>
+
+<?php
+  include_once 'header.php';
+?>
+
+  <form method="post" action="includes/logininc.php" class="container">
+    <h1>Login</h1>
+    <p>Please fill in this form to login.</p>
+    <br>
+
+    <label for="uid"><b>Username or Email</b></label><br>
+    <input type="text" placeholder="Enter Username or Email" name="uid" id="uid" required><br>
+
+    <label for="pwd"><b>Password</b></label><br>
+    <input type="password" placeholder="Enter Password" name="pwd" id="pwd" required><br>
+
+    <div class="bottom-buttons">
+      <button type="button" class="cancelbtn" onclick="document.getElementById('uid').value = ''; document.getElementById('pwd').value = '';">Cancel</button>
+      <button type="submit" class="signupbtn">Login</button>
+    </div>
+
+    <p>Don't have an account? <a href="signup.php" style="color: LightSkyBlue">Sign up</a>.</p>
+
+  </form>
+
   <style>
     body {margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif;}
     * {box-sizing: border-box}
@@ -50,10 +80,11 @@
       text-align: center;
       background-color: #0D226B;
       color: white;
-      border-radius: 12px;
+      border-radius: 20px;
       width: 50%;
       margin: auto;
-      margin-top: 20px;
+      margin-top: 40px;
+      margin-bottom: 40px;
       padding: 20px;
     }
 
@@ -65,35 +96,6 @@
 
   </style>
 
-</head>
-<body>
-<!--start navbar-->
-<div class="topnav">
-  <a href="index.php"><img src="https://img.icons8.com/color/96/000000/strength.png" style="width: 40px;"></a>  <!--homepage logo-->
-  <a href="dashboard.php"><img src="https://img.icons8.com/material/96/ffffff/dashboard-layout.png" style="width: 40px;"></a>  <!--dashboard tab image-->
-  <a href="socialfeed.php"><img src="https://img.icons8.com/ios-filled/100/ffffff/conference-call.png" style="width: 40px;"></a>  <!--social tab image-->
-</div>
-<!--end navbar-->
-
-  <form method="post" action="includes/logininc.php" class="container">
-    <h1>Login</h1>
-    <p>Please fill in this form to login.</p>
-    <br>
-
-    <label for="uid"><b>Username or Email</b></label><br>
-    <input type="text" placeholder="Enter Username or Email" name="uid" id="uid" required><br>
-
-    <label for="pwd"><b>Password</b></label><br>
-    <input type="password" placeholder="Enter Password" name="pwd" id="pwd" required><br>
-
-    <div class="bottom-buttons">
-      <button type="button" class="cancelbtn" onclick="document.getElementById('uid').value = ''; document.getElementById('pwd').value = '';">Cancel</button>
-      <button type="submit" class="signupbtn">Login</button>
-    </div>
-
-    <p>Don't have an account? <a href="signup.php" style="color: LightSkyBlue">Sign up</a>.</p>
-
-  </form>
-
-</body>
-</html>
+<?php
+  include_once 'footer.php';
+?>

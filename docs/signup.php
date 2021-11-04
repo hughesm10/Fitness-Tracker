@@ -1,79 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <title>Sign Up</title>
-  <link rel="stylesheet" href="navbar.css">
-  <style>
-    body {margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif;}
-    * {box-sizing: border-box}
-
-    /* Full-width input fields */
-    input[type=text], input[type=password], input[type=email] {
-      width: 50%;
-      padding: 15px;
-      margin: 5px 0 22px 0;
-      display: inline-block;
-      border: none;
-      background: white;
-      border-radius: 12px;
-    }
-
-    input[type=text]:focus, input[type=password]:focus, input[type=email]:focus {
-      background-color: lightgray;
-      outline: none;
-    }
-
-    /* Set a style for all buttons */
-    button {  
-      background-color: #89CFF0;
-      color: white;
-      font-size: 20px;
-      font-weight: 500;
-      border: none;
-      border-radius: 12px;
-      cursor: pointer;
-      width: fit-content;
-      padding: 12px;
-      margin: 0 10px;
-      display: inline-block;
-    }
-
-    .bottom-buttons {
-      text-align: center;
-    }
-
-    .cancelbtn {
-      background-color: #f44336;
-    }
-  
-    .container {
-      text-align: center;
-      background-color: #0D226B;
-      color: white;
-      border-radius: 12px;
-      width: 50%;
-      margin: auto;
-      margin-top: 20px;
-      padding: 20px;
-    }
-
-    .container label {
-      display: inline-block; 
-      width: 50%; 
-      text-align: left;
-    }
-
-  </style>
-
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <link rel="stylesheet" href="css/navbar.css">
 </head>
 <body>
-<!--start navbar-->
-<div class="topnav">
-  <a href="index.php"><img src="https://img.icons8.com/color/96/000000/strength.png" style="width: 40px;"></a>  <!--homepage logo-->
-  <a href="dashboard.php"><img src="https://img.icons8.com/material/96/ffffff/dashboard-layout.png" style="width: 40px;"></a>  <!--dashboard tab image-->
-  <a href="socialfeed.php"><img src="https://img.icons8.com/ios-filled/100/ffffff/conference-call.png" style="width: 40px;"></a>  <!--social tab image-->
-</div>
-<!--end navbar-->
+
+<?php
+  include_once 'header.php';
+?>
 
   <form method="post" action="includes/signupinc.php" class="container">
     <h1>Sign Up</h1>
@@ -121,5 +59,68 @@
 
   </script>
 
-</body>
-</html>
+  <style>
+    body {margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif;}
+    * {box-sizing: border-box}
+
+    /* Full-width input fields */
+    input[type=text], input[type=password], input[type=email] {
+      width: 50%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      display: inline-block;
+      border: none;
+      background: white;
+      border-radius: 12px;
+    }
+
+    input[type=text]:focus, input[type=password]:focus, input[type=email]:focus {
+      background-color: lightgray;
+      outline: none;
+    }
+
+    /* Set a style for all buttons */
+    button {  
+      background-color: #89CFF0;
+      color: white;
+      font-size: 20px;
+      font-weight: 500;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      width: fit-content;
+      padding: 12px;
+      margin: 0 10px;
+      display: inline-block;
+    }
+
+    .bottom-buttons {
+      text-align: center;
+    }
+
+    .cancelbtn {
+      background-color: #f44336;
+    }
+  
+    .container {
+      text-align: center;
+      background-color: #0D226B;
+      color: white;
+      border-radius: 20px;
+      width: 50%;
+      margin: auto;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      padding: 20px;
+    }
+
+    .container label {
+      display: inline-block; 
+      width: 50%; 
+      text-align: left;
+    }
+  </style>
+
+<?php
+  include_once 'footer.php';
+?>
