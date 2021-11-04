@@ -1,7 +1,3 @@
-<?php
-
-?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,7 +9,7 @@
 
     /* Full-width input fields */
     input[type=text], input[type=password] {
-      width: 100%;
+      width: 50%;
       padding: 15px;
       margin: 5px 0 22px 0;
       display: inline-block;
@@ -29,21 +25,17 @@
 
     /* Set a style for all buttons */
     button {  
-      background-color: #4297FF;
+      background-color: #89CFF0;
       color: white;
       font-size: 20px;
+      font-weight: 500;
       border: none;
       border-radius: 12px;
       cursor: pointer;
       width: fit-content;
-      opacity: 0.9;
       padding: 12px;
       margin: 0 10px;
       display: inline-block;
-    }
-
-    button:hover {
-      opacity: 1;
     }
 
     .bottom-buttons{
@@ -54,9 +46,21 @@
       background-color: #f44336;
     }
   
-    /* Add padding to container elements */
     .container {
-      padding: 16px;
+      text-align: center;
+      background-color: #0D226B;
+      color: white;
+      border-radius: 12px;
+      width: 50%;
+      margin: auto;
+      margin-top: 20px;
+      padding: 20px;
+    }
+
+    .container label {
+      display: inline-block; 
+      width: 50%; 
+      text-align: left;
     }
 
   </style>
@@ -65,45 +69,29 @@
 <body>
 <!--start navbar-->
 <div class="topnav">
-  <a href="index.html"><img src="https://img.icons8.com/color/96/000000/strength.png" style="width: 30px;"></a>
-  <!--homepage logo-->
-  <a href="dashboard.html"><img src="https://img.icons8.com/material/96/ffffff/dashboard-layout.png"
-      style="width: 30px;"></a>
-  <!--dashboard tab image-->
-  <a href="socialfeed.html"><img src="https://img.icons8.com/ios-filled/100/ffffff/conference-call.png"
-      style="width: 30px;"></a>
-  <!--social tab image-->
-  <div class="topnav-right">
-    <a href="profile.html"><img src="https://img.icons8.com/ios-glyphs/30/ffffff/user--v1.png" style="width: 30px;"></a>
-    <!--profile tab image-->
-    <a href="settings.html"><img src="https://img.icons8.com/ios-filled/50/ffffff/settings.png"
-        style="width: 30px;"></a>
-    <!--settings tab image-->
-  </div>
+  <a href="index.php"><img src="https://img.icons8.com/color/96/000000/strength.png" style="width: 40px;"></a>  <!--homepage logo-->
+  <a href="dashboard.php"><img src="https://img.icons8.com/material/96/ffffff/dashboard-layout.png" style="width: 40px;"></a>  <!--dashboard tab image-->
+  <a href="socialfeed.php"><img src="https://img.icons8.com/ios-filled/100/ffffff/conference-call.png" style="width: 40px;"></a>  <!--social tab image-->
 </div>
 <!--end navbar-->
 
-  <form method="post" class="container">
+  <form method="post" action="includes/logininc.php" class="container">
     <h1>Login</h1>
-    <br>
     <p>Please fill in this form to login.</p>
     <br>
 
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
+    <label for="uid"><b>Username or Email</b></label><br>
+    <input type="text" placeholder="Enter Username or Email" name="uid" id="uid" required><br>
 
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+    <label for="pwd"><b>Password</b></label><br>
+    <input type="password" placeholder="Enter Password" name="pwd" id="pwd" required><br>
 
     <div class="bottom-buttons">
-      <button type="button" class="cancelbtn">Cancel</button>
+      <button type="button" class="cancelbtn" onclick="document.getElementById('uid').value = ''; document.getElementById('pwd').value = '';">Cancel</button>
       <button type="submit" class="signupbtn">Login</button>
     </div>
-    <br>
 
-    <div class="signup-link">
-      <p>Don't have an account? <a href="signup.html">Sign up</a>.</p>
-    </div>
+    <p>Don't have an account? <a href="signup.php" style="color: LightSkyBlue">Sign up</a>.</p>
 
   </form>
 

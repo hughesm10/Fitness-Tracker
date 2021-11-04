@@ -13,8 +13,9 @@
             padding: 0;
             font-family: Arial, Helvetica, sans-serif;
         }
-      .tos-text, .tos-text ul{
-        padding: 16px;
+      .tos-text {
+        margin-left: 100px;
+        margin-right: 100px;
       }
 
     </style>
@@ -23,30 +24,42 @@
 <body>
 <!--start navbar-->
 <div class="topnav">
-  <a href="index.html"><img src="https://img.icons8.com/color/96/000000/strength.png" style="width: 30px;"></a>
-  <!--homepage logo-->
-  <a href="dashboard.html"><img src="https://img.icons8.com/material/96/ffffff/dashboard-layout.png"
-      style="width: 30px;"></a>
-  <!--dashboard tab image-->
-  <a href="socialfeed.html"><img src="https://img.icons8.com/ios-filled/100/ffffff/conference-call.png"
-      style="width: 30px;"></a>
-  <!--social tab image-->
+  <a href="index.php"><img src="https://img.icons8.com/color/96/000000/strength.png" style="width: 40px;"></a>  <!--homepage logo-->
+  <a href="dashboard.php"><img src="https://img.icons8.com/material/96/ffffff/dashboard-layout.png" style="width: 40px;"></a>  <!--dashboard tab image-->
+  <a href="socialfeed.php"><img src="https://img.icons8.com/ios-filled/100/ffffff/conference-call.png" style="width: 40px;"></a>  <!--social tab image-->
   <div class="topnav-right">
-    <a><input type="button" class="signup-button" value="Sign Up" onclick="location.href='signup.html';"></a>
-    <a><input type="button" class="login-button" value="Login" onclick="location.href='login.html';"></a>
-    <a href="profile.html"><img src="https://img.icons8.com/ios-glyphs/30/ffffff/user--v1.png" style="width: 30px;"></a>
-    <!--profile tab image-->
-    <a href="settings.html"><img src="https://img.icons8.com/ios-filled/50/ffffff/settings.png"
-        style="width: 30px;"></a>
-    <!--settings tab image-->
+    <?php
+      if(isset($_SESSION["userid"]))
+      {
+    ?>
+      <div class="dropdown" style="float:right;">
+        <div>
+          <img class="dropbtn" src="https://img.icons8.com/external-kiranshastry-solid-kiranshastry/64/ffffff/external-user-interface-kiranshastry-solid-kiranshastry.png">
+        </div>
+        <div class="dropdown-content">
+          <a href="profile.php">Profile</a>
+          <a href="settings.php">Settings</a>
+          <a href="#">Log out</a>
+        </div>
+      </div>
+    <?php
+      }
+      else
+      {
+    ?>
+      <a><input type="button" class="signup-button" value="Sign Up" onclick="location.href='signup.php';"></a>
+      <a><input type="button" class="login-button" value="Login" onclick="location.href='login.php';"></a>
+    <?php
+      }
+    ?>
+
   </div>
 </div>
 <!--end navbar-->
-
+    
+    <h1 style="margin: 20px;">Terms and Conditions</h1>
+    <br>
     <div class="tos-text">
-
-      <h1>Terms and Conditions</h1>
-      <br>
       <p>These terms and conditions (“Agreement”) set forth the general terms and conditions of your use of the fitness-tracker.com website (“Website” or
         “Service”) and any of its related products and services (collectively, “Services”). This Agreement is legally binding
         between you (“User”, “you” or “your”) and this Website operator (“Operator”, “we”, “us” or “our”). If you are entering
@@ -163,7 +176,7 @@
         Agreement, you are not authorized to access or use the Website and Services.</p>
       <br>
       <h2>Contacting us</h2>
-      <p>If you have any questions, concerns, or complaints regarding this Agreement, we encourage you to contact us using our <a href="contact.html">contact form</a>.</p>
+      <p>If you have any questions, concerns, or complaints regarding this Agreement, we encourage you to contact us using our <a href="contact.php" style="color: LightSkyBlue">contact form</a>.</p>
       <br>
       <p>This document was last updated on October 4, 2021</p>
 

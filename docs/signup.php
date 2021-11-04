@@ -1,25 +1,3 @@
-<?php
-session_start();
-
-  include("connection.php");
-  include("functions.php");
-
-  if($_SERVER['REQUEST_METHOD'] == "POST")
-  {
-    //something was posted
-    $uname = $_POST['uname'];
-    $password = $_POST['psw'];
-
-    if(!empty($uname) && !empty($password) && !is_numeric($uname))
-    {
-      $query = "insert into users (uid, uname, password) values ()"
-    }else {
-      echo "Please enter some valid information!";
-    }
-  }
-
-?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -31,8 +9,8 @@ session_start();
 
     /* Full-width input fields */
     input[type=text], input[type=password], input[type=email] {
-      width: 100%;
-      padding: 16px;
+      width: 50%;
+      padding: 15px;
       margin: 5px 0 22px 0;
       display: inline-block;
       border: none;
@@ -47,24 +25,20 @@ session_start();
 
     /* Set a style for all buttons */
     button {  
-      background-color: #4297FF;
+      background-color: #89CFF0;
       color: white;
       font-size: 20px;
+      font-weight: 500;
       border: none;
       border-radius: 12px;
       cursor: pointer;
       width: fit-content;
-      opacity: 0.9;
-      padding: 16px;
+      padding: 12px;
       margin: 0 10px;
       display: inline-block;
     }
 
-    button:hover {
-      opacity: 1;
-    }
-
-    .bottom-buttons{
+    .bottom-buttons {
       text-align: center;
     }
 
@@ -72,10 +46,21 @@ session_start();
       background-color: #f44336;
     }
   
-    /* Add padding to container elements */
     .container {
-      padding: 16px;
-     
+      text-align: center;
+      background-color: #0D226B;
+      color: white;
+      border-radius: 12px;
+      width: 50%;
+      margin: auto;
+      margin-top: 20px;
+      padding: 20px;
+    }
+
+    .container label {
+      display: inline-block; 
+      width: 50%; 
+      text-align: left;
     }
 
   </style>
@@ -84,63 +69,57 @@ session_start();
 <body>
 <!--start navbar-->
 <div class="topnav">
-  <a href="index.html"><img src="https://img.icons8.com/color/96/000000/strength.png" style="width: 30px;"></a>
-  <!--homepage logo-->
-  <a href="dashboard.html"><img src="https://img.icons8.com/material/96/ffffff/dashboard-layout.png"
-      style="width: 30px;"></a>
-  <!--dashboard tab image-->
-  <a href="socialfeed.html"><img src="https://img.icons8.com/ios-filled/100/ffffff/conference-call.png"
-      style="width: 30px;"></a>
-  <!--social tab image-->
-  <div class="topnav-right">
-    <a href="profile.html"><img src="https://img.icons8.com/ios-glyphs/30/ffffff/user--v1.png" style="width: 30px;"></a>
-    <!--profile tab image-->
-    <a href="settings.html"><img src="https://img.icons8.com/ios-filled/50/ffffff/settings.png"
-        style="width: 30px;"></a>
-    <!--settings tab image-->
-  </div>
+  <a href="index.php"><img src="https://img.icons8.com/color/96/000000/strength.png" style="width: 40px;"></a>  <!--homepage logo-->
+  <a href="dashboard.php"><img src="https://img.icons8.com/material/96/ffffff/dashboard-layout.png" style="width: 40px;"></a>  <!--dashboard tab image-->
+  <a href="socialfeed.php"><img src="https://img.icons8.com/ios-filled/100/ffffff/conference-call.png" style="width: 40px;"></a>  <!--social tab image-->
 </div>
 <!--end navbar-->
 
-  <form method="post" class="container">
+  <form method="post" action="includes/signupinc.php" class="container">
     <h1>Sign Up</h1>
-    <br>
     <p>Please fill in this form to create an account.</p>
     <br>
 
-    <label for="fname" class="fname"><b>First Name</b></label>
-    <input type="text" placeholder="Enter First Name" name="fname" required>
+    <label for="uid"><b>Username</b></label><br>
+    <input type="text" placeholder="Enter Username" name="uid" id="uid" required><br>
 
-    <label for="lname" class="lname"><b>Last Name</b></label>
-    <input type="text" placeholder="Enter Last Name" name="lname" required>
+    <label for="email"><b>Email</b></label><br>
+    <input type="email" placeholder="Enter Email" name="email" id="email" required><br>
 
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
+    <label for="pwd"><b>Password</b></label><br>
+    <input type="password" placeholder="Enter Password" name="pwd" id="pwd" required><br>
 
-    <label for="email"><b>Email</b></label>
-    <input type="email" placeholder="Enter Email" name="email" required>
+    <label for="pwdrepeat"><b>Confirm Password</b></label><br>
+    <input type="password" placeholder="Confirm Password" name="pwdrepeat" id="pwdrepeat" required><br>
 
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-
-    <label for="psw-repeat"><b>Confirm Password</b></label>
-    <input type="password" placeholder="Confirm Password" name="psw-repeat" required>
-
-    <label>
-      <input type="checkbox" name="tos" style="margin-bottom: 15px;" required> By creating an account you agree to our <a href="tos.html" style="color:  #4297FF">Terms & Conditions</a>.
+    <label style="width: fit-content">
+      <input type="checkbox" name="tos" id="tos" style="margin-bottom: 15px;" required> By creating an account you agree to our <a href="tos.php" style="color: LightSkyBlue">Terms & Conditions</a>.
     </label>
 
-    <div class="bottom-buttons">
-      <button type="button" class="cancelbtn">Cancel</button>
-      <button type="submit" class="signupbtn">Sign Up</button>
-    </div>
+    <br>
     <br>
 
-    <div class="login-link">
-      <p>Already have an account? <a href="login.html">Login</a>.</p>
+    <div class="bottom-buttons">
+      <button type="button" class="cancelbtn" onclick="clearInputs()">Cancel</button>
+      <button type="submit" class="signupbtn">Sign Up</button>
     </div>
 
+    <p>Already have an account? <a href="login.php" style="color: LightSkyBlue">Login</a>.</p>
+
   </form>
+
+  <script>
+
+    function clearInputs() {
+
+      document.getElementById('uid').value = '';
+      document.getElementById('email').value = '';
+      document.getElementById('pwd').value = '';
+      document.getElementById('pwdrepeat').value = '';
+      document.getElementById('tos').checked = false;
+    }
+
+  </script>
 
 </body>
 </html>
