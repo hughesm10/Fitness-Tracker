@@ -5,13 +5,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-  <link rel="stylesheet" href="css/navbar.css">
 </head>
 <body>
 
-<?php
-  include_once 'header.php';
-?>
+  <?php
+    include_once 'header.php';
+  ?>
 
   <div class="header">
     <img src="img/8225.jpg">
@@ -70,9 +69,9 @@
   </div>
 
   <!-- Contact Us section -->
-  <div style="color: black; background-color: #FDBE34; text-align: center; display: inline-block; width: 100%; height: 220px;">
+  <div style="color: black; background-color: #FDBE34; text-align: center; display: inline-block; width: 100%; height: 200px;">
     <div>
-      <h3 style="font-size: 30px;">Contact Us</h3>
+      <h1 style="font-size: 30px;">Contact Us</h1>
       <p>Let's get in touch. Send us a message:</p>
       <input type="button" class="contact-button" value="Contact Us" onclick="location.href='contact.php';">
     </div>
@@ -155,6 +154,9 @@
     }
   </style>
 
-<?php
-  include_once 'footer.php';
-?>
+  <?php
+    include_once 'footer.php';
+  ?>
+
+</body>
+</html>

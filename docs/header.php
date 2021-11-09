@@ -1,8 +1,7 @@
-<!--start navbar-->
 <div class="topnav">
   <a href="index.php"><img src="https://img.icons8.com/color/96/000000/strength.png" style="width: 40px;"></a>  <!--homepage logo-->
   <a href="dashboard.php"><img src="https://img.icons8.com/material/96/ffffff/dashboard-layout.png" style="width: 40px;"></a>  <!--dashboard tab image-->
-  <a href="socialfeed.php"><img src="https://img.icons8.com/ios-filled/100/ffffff/conference-call.png" style="width: 40px;"></a>  <!--social tab image-->
+  <a href="social.php"><img src="https://img.icons8.com/ios-filled/100/ffffff/conference-call.png" style="width: 40px;"></a>  <!--social tab image-->
   <div class="topnav-right">
     <?php
       if(isset($_SESSION["userid"]))
@@ -30,6 +29,99 @@
     ?>
   </div>
 </div>
-<!--end navbar-->
 
-<div class="wrapper">
+<style>
+  /* Colors:
+      Light Blue: #0B409C
+      Yellow: #FDBE34
+      Dark Blue: #0D226B
+  */
+
+  .topnav {
+    background-color: #0B409C;
+    height: 60px;
+    width: 100%;
+    position: sticky;
+    display: table;
+    top: 0;
+    z-index: 100;
+  }
+
+  .topnav a {
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  .topnav-right {
+    float: right;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropbtn {
+    margin-top: 10px;
+    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #0D226B;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 12px;
+    z-index: 1;
+    margin-top: 0px;
+    margin-right: 15px;
+  }
+
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    min-width: 160px;
+    border-radius: 12px;
+    text-decoration: none;
+    text-align: left;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+  }
+
+  .dropdown-content a:hover {background-color: #ddd; color: #0B409C;}
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown:hover .dropbtn {
+    background-color: #0B409C;
+    color: white;
+  }
+
+  .signup-button, .login-button {
+    border-radius: 12px;
+    height: 40px;   
+    width: 100px;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #0B409C;
+    color: white;
+    border: solid white 2px;
+    cursor: pointer;
+  }
+
+  .signup-button:hover, .login-button:hover{
+    background-color: white;
+    color: #0B409C;
+  }
+</style>

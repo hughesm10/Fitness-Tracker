@@ -5,13 +5,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-  <link rel="stylesheet" href="css/navbar.css">
 </head>
 <body>
 
-<?php
-  include_once 'header.php';
-?>
+  <?php
+    include_once 'header.php';
+  ?>
 
   <form method="post" action="includes/logininc.php" class="container">
     <h1>Login</h1>
@@ -26,10 +25,10 @@
 
     <div class="bottom-buttons">
       <button type="button" class="cancelbtn" onclick="document.getElementById('uid').value = ''; document.getElementById('pwd').value = '';">Cancel</button>
-      <button type="submit" class="signupbtn">Login</button>
+      <button type="submit" class="signupbtn" name="submit">Login</button>
     </div>
 
-    <p>Don't have an account? <a href="signup.php" style="color: LightSkyBlue">Sign up</a>.</p>
+    <p>Don't have an account?<a href="signup.php" style="color: LightSkyBlue">Sign up</a>.</p>
 
   </form>
 
@@ -96,6 +95,9 @@
 
   </style>
 
-<?php
-  include_once 'footer.php';
-?>
+  <?php
+    include_once 'footer.php';
+  ?>
+
+</body>
+</html>

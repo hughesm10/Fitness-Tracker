@@ -5,13 +5,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-  <link rel="stylesheet" href="css/navbar.css">
 </head>
 <body>
 
-<?php
-  include_once 'header.php';
-?>
+  <?php
+    include_once 'header.php';
+  ?>
 
   <form method="post" class="container">
     <h1>Contact</h1>
@@ -29,6 +28,26 @@
       <button type="submit">Submit</button>
     </div>
   </form>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
   
   <style>
     body {margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif;}
@@ -104,9 +123,11 @@
       width: 50%; 
       text-align: left;
     }
-
   </style>
 
-<?php
-  include_once 'footer.php';
-?>
+  <?php
+    include_once 'footer.php';
+  ?>
+
+</body>
+</html>

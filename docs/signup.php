@@ -5,24 +5,23 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-  <link rel="stylesheet" href="css/navbar.css">
 </head>
 <body>
 
-<?php
-  include_once 'header.php';
-?>
+  <?php
+    include_once 'header.php';
+  ?>
 
   <form method="post" action="includes/signupinc.php" class="container">
     <h1>Sign Up</h1>
     <p>Please fill in this form to create an account.</p>
     <br>
 
-    <label for="uid"><b>Username</b></label><br>
-    <input type="text" placeholder="Enter Username" name="uid" id="uid" required><br>
-
     <label for="email"><b>Email</b></label><br>
     <input type="email" placeholder="Enter Email" name="email" id="email" required><br>
+
+    <label for="uid"><b>Username</b></label><br>
+    <input type="text" placeholder="Enter Username" name="uid" id="uid" required><br>
 
     <label for="pwd"><b>Password</b></label><br>
     <input type="password" placeholder="Enter Password" name="pwd" id="pwd" required><br>
@@ -39,7 +38,7 @@
 
     <div class="bottom-buttons">
       <button type="button" class="cancelbtn" onclick="clearInputs()">Cancel</button>
-      <button type="submit" class="signupbtn">Sign Up</button>
+      <button type="submit" class="signupbtn" name="submit">Sign Up</button>
     </div>
 
     <p>Already have an account? <a href="login.php" style="color: LightSkyBlue">Login</a>.</p>
@@ -121,6 +120,9 @@
     }
   </style>
 
-<?php
-  include_once 'footer.php';
-?>
+  <?php
+    include_once 'footer.php';
+  ?>
+
+</body>
+</html>

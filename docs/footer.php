@@ -1,8 +1,25 @@
-</div>
-<!-- Footer -->
-<footer style="display: inline-block; width: 100%; text-align: center; color: white; background-color: #0D226B; padding-top: 30px; padding-bottom: 64px;">
-  <p style="font-size: 40px;">Fitness Tracker</p>
+<footer>
+  
+  <h1>Fitness Tracker</h1>
+
 </footer>
 
-</body>
-</html>
+<style>
+  /* Colors:
+    Light Blue: #0B409C
+    Yellow: #FDBE34
+    Dark Blue: #0D226B
+  */
+
+  footer {
+    background-color: #0D226B;
+    width: 100%;
+    padding: 20px 0px;
+    text-align: center;
+  }
+
+  footer h1 {
+    font-size: 40px;
+    color: #FDBE34;
+  }
+</style>
