@@ -12,6 +12,12 @@
     include_once 'header.php';
   ?>
 
+  <?php
+    if (isset($_SESSION["useruid"])) {
+      echo "<p class='user-text'>Hello, " . $_SESSION["useruid"] . "!</p>";
+    }
+  ?>
+
   <div class="header">
     <img src="img/8225.jpg">
     <p class="header-text">FITNESS TRACKER</p>
@@ -21,7 +27,7 @@
 
   <!-- About Section -->
   <div style="padding: 20px;">
-    <h3 style="text-align: center; display: inline-block; width: 100%;">ABOUT FITNESS TRACKER</h3>
+    <h3 style="text-align: center; display: inline-block; width: 100%; font-size: 24px;">ABOUT FITNESS TRACKER</h3>
     <p style="text-align: center; display: inline-block; width: 100%; font-size: 18px;">Key features of the website</p>
     <div style="margin-top:64px; padding: 0 8px; text-align: center;">
       <div style="width: 33%; float: left;">
@@ -50,7 +56,7 @@
       <br>Trainers
     </div>
     <div style="width: 25%; float: left;">
-      <span style="font-size: 36px;">55+</span>
+      <span style="font-size: 36px;">30+</span>
       <br>Exercises
     </div>
     <div style="width: 25%; float: left;">
@@ -94,6 +100,16 @@
       font-size: 60px;
       text-align: center;
       color: #FDBE34;
+    }
+
+    .user-text {
+      font-size: 25px;
+      font-weight: 600;
+      text-align: left;
+      color: black;
+      margin-top: 10px;
+      margin-left: 20px;
+      padding: 10px;
     }
 
     .sub-text {

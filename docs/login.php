@@ -28,8 +28,18 @@
       <button type="submit" class="signupbtn" name="submit">Login</button>
     </div>
 
-    <p>Don't have an account?<a href="signup.php" style="color: LightSkyBlue">Sign up</a>.</p>
+    <p>Don't have an account? <a href="signup.php" style="color: LightSkyBlue">Sign up</a>.</p>
 
+    <?php
+      if (isset($_GET["error"])) {
+        if ($_GET["error"] == "emptyinput") {
+          echo "<p style='font-size:25px;color:red;'>Fill in all the fields!</p>";
+        }
+        elseif ($_GET["error"] == "wronglogin") {
+          echo "<p style='font-size:25px;color:red;'>Incorrect login!</p>";
+        }
+      }
+    ?>
   </form>
 
   <style>
@@ -79,12 +89,12 @@
       text-align: center;
       background-color: #0D226B;
       color: white;
-      border-radius: 20px;
-      width: 50%;
+      border-radius: 30px;
+      width: 40%;
       margin: auto;
       margin-top: 40px;
-      margin-bottom: 40px;
-      padding: 20px;
+      margin-bottom: 340px;
+      padding: 10px;
     }
 
     .container label {

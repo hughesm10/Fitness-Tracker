@@ -30,7 +30,7 @@
     <input type="password" placeholder="Confirm Password" name="pwdrepeat" id="pwdrepeat" required><br>
 
     <label style="width: fit-content">
-      <input type="checkbox" name="tos" id="tos" style="margin-bottom: 15px;" required> By creating an account you agree to our <a href="tos.php" style="color: LightSkyBlue">Terms & Conditions</a>.
+      <input type="checkbox" name="tos" id="tos" style="margin-bottom: 15px;" required> By creating an account, you agree to our <a href="tos.php" style="color: LightSkyBlue">Terms & Conditions</a>.
     </label>
 
     <br>
@@ -43,6 +43,31 @@
 
     <p>Already have an account? <a href="login.php" style="color: LightSkyBlue">Login</a>.</p>
 
+    <?php
+      if (isset($_GET["error"])) {
+        if ($_GET["error"] == "emptyinput") {
+          echo "<p style='font-size:25px;color:red;'>Fill in all the fields!</p>";
+        }
+        elseif ($_GET["error"] == "invaliduid") {
+          echo "<p style='font-size:25px;color:red;'>Choose a proper username!</p>";
+        }
+        elseif ($_GET["error"] == "invalidemail") {
+          echo "<p style='font-size:25px;color:red;'>Choose a proper email!</p>";
+        }
+        elseif ($_GET["error"] == "invalidpasswords") {
+          echo "<p style='font-size:25px;color:red;'>Passwords don't match!</p>";
+        }
+        elseif ($_GET["error"] == "stmtfailed") {
+          echo "<p style='font-size:25px;color:red;'>Something went wrong, try again!</p>";
+        }
+        elseif ($_GET["error"] == "usernametaken") {
+          echo "<p style='font-size:25px;color:red;'>Username already taken!</p>";
+        }
+        elseif ($_GET["error"] == "none") {
+          echo "<p style='font-size:25px;color:LightSkyBlue;'>You have signed up!</p>";
+        }
+      }
+    ?>
   </form>
 
   <script>
@@ -105,12 +130,12 @@
       text-align: center;
       background-color: #0D226B;
       color: white;
-      border-radius: 20px;
-      width: 50%;
+      border-radius: 30px;
+      width: 40%;
       margin: auto;
       margin-top: 40px;
-      margin-bottom: 40px;
-      padding: 20px;
+      margin-bottom: 110px;
+      padding: 10px;
     }
 
     .container label {

@@ -1,6 +1,6 @@
 <footer>
   
-  <h1>Fitness Tracker</h1>
+  <h1>FITNESS TRACKER</h1>
 
 </footer>
 
@@ -12,14 +12,19 @@
   */
 
   footer {
+    display: table;
     background-color: #0D226B;
     width: 100%;
-    padding: 20px 0px;
-    text-align: center;
+    height: 200px; 
+    font-family: Arial, Helvetica, sans-serif;
   }
 
   footer h1 {
     font-size: 40px;
+    font-weight: 500;
     color: #FDBE34;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 200px;
   }
 </style>
