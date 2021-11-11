@@ -10,11 +10,9 @@
 
   <?php
     include_once 'header.php';
-  ?>
 
-  <?php
     if (isset($_SESSION["useruid"])) {
-      echo "<p class='user-text'>Hello, " . $_SESSION["useruid"] . "!</p>";
+      echo "<p class='user-text'>Welcome, " . $_SESSION["useruid"] . "!</p>";
     }
   ?>
 

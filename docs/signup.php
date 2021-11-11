@@ -15,6 +15,7 @@
   <form method="post" action="includes/signupinc.php" class="container">
     <h1>Sign Up</h1>
     <p>Please fill in this form to create an account.</p>
+    
     <br>
 
     <label for="email"><b>Email</b></label><br>
