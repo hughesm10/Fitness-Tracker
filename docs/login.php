@@ -13,7 +13,7 @@
   ?>
 
   <form method="post" action="includes/logininc.php" class="container">
-    <h1>Login</h1>
+    <h1 style="color: #FDBE34;">Login</h1>
     <p>Please fill in this form to login.</p>
     <br>
 
@@ -28,7 +28,7 @@
       <button type="submit" class="signupbtn" name="submit">Login</button>
     </div>
 
-    <p>Don't have an account? <a href="signup.php" style="color: LightSkyBlue">Sign up</a>.</p>
+    <p>Don't have an account? <a href="signup.php" style="color: LightSkyBlue">Sign Up</a>.</p>
 
     <?php
       if (isset($_GET["error"])) {
@@ -90,7 +90,7 @@
       background-color: #0D226B;
       color: white;
       border-radius: 30px;
-      width: 40%;
+      width: 600px;
       margin: auto;
       margin-top: 40px;
       margin-bottom: 440px;

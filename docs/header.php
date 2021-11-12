@@ -3,15 +3,15 @@
 ?>
 
 <div class="topnav">
-  <a href="index.php"><img src="https://img.icons8.com/color/96/000000/strength.png" style="width: 40px;"></a>  <!--homepage logo-->
-  <a href="dashboard.php"><img src="https://img.icons8.com/material/96/ffffff/dashboard-layout.png" style="width: 40px;"></a>  <!--dashboard tab image-->
-  <a href="social.php"><img src="https://img.icons8.com/ios-filled/100/ffffff/conference-call.png" style="width: 40px;"></a>  <!--social tab image-->
+  <a href="index.php">Home</a>
+  <a href="dashboard.php">Dashboard</a>
+  <a href="social.php">Social</a>
   <div class="topnav-right">
     <?php
       if(isset($_SESSION["userid"]))
       {
     ?>
-      <div class="dropdown" style="float:right;">
+      <div class="dropdown">
         <div>
           <img class="dropbtn" src="https://img.icons8.com/external-kiranshastry-solid-kiranshastry/64/ffffff/external-user-interface-kiranshastry-solid-kiranshastry.png" onclick="location.href='profile.php';">
         </div>
@@ -26,8 +26,8 @@
       else
       {
     ?>
-      <a><input type="button" class="signup-button" value="Sign Up" onclick="location.href='signup.php';"></a>
-      <a><input type="button" class="login-button" value="Login" onclick="location.href='login.php';"></a>
+      <input type="button" class="signup-button" value="Sign Up" onclick="location.href='signup.php';">
+      <input type="button" class="login-button" value="Login" onclick="location.href='login.php';">
     <?php
       }
     ?>
@@ -43,19 +43,14 @@
 
   .topnav {
     background-color: #0B409C;
-    width: 100%;
-    position: sticky;
-    display: table;
-    top: 0;
-    z-index: 100;
-    margin: 0; 
+    overflow: hidden;
     font-family: Arial, Helvetica, sans-serif;
   }
 
   .topnav a {
     float: left;
-    text-align: center;
-    padding: 16px 20px;
+    color: white;
+    margin: 20px 0px 20px 30px;
     text-decoration: none;
     font-size: 18px;
   }
@@ -64,17 +59,17 @@
     float: right;
   }
 
-  .dropdown {
-    position: relative;
-    display: inline-block;
+  .dropbtn {
+    margin-top: 5px;
+    margin-right: 20px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
   }
 
-  .dropbtn {
-    margin-top: 10px;
-    margin-right: 20px;
-    width: 55px;
-    height: 55px;
-    cursor: pointer;
+  .dropdown:hover {
+    background-color: #0B409C;
+    color: white;
   }
 
   .dropdown-content {
@@ -82,7 +77,7 @@
     position: absolute;
     right: 0;
     background-color: #0D226B;
-    min-width: 140px;
+    width: 200px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     border-radius: 12px;
     z-index: 1;
@@ -91,15 +86,14 @@
   }
 
   .dropdown-content a {
+    float: none;
     color: white;
-    padding: 12px 16px;
-    min-width: 140px;
     border-radius: 12px;
     text-decoration: none;
-    text-align: left;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
     display: block;
+    text-align: left;
+    margin: 10px;
+    padding: 10px;
   }
 
   .dropdown-content a:hover {background-color: #ddd; color: #0B409C;}
@@ -108,21 +102,18 @@
     display: block;
   }
 
-  .dropdown:hover .dropbtn {
-    background-color: #0B409C;
-    color: white;
-  }
-
   .signup-button, .login-button {
-    border-radius: 12px;
-    height: 40px;   
+    border-radius: 12px;   
     width: 100px;
+    height: 40px;
     font-size: 20px;
     font-weight: 500;
     background-color: #0B409C;
     color: white;
     border: solid white 2px;
     cursor: pointer;
+    padding: 6px 10px;
+    margin: 10px 20px 10px 0px;
   }
 
   .signup-button:hover, .login-button:hover{

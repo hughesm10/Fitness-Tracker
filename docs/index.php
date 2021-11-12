@@ -92,7 +92,7 @@
 
     .header-text {
       position: absolute;
-      top: 12%;
+      top: 120px;
       left: 50%;
       transform: translate(-50%, -50%);
       font-size: 60px;
@@ -112,7 +112,7 @@
 
     .sub-text {
       position: absolute;
-      top: 22%;
+      top: 200px;
       left: 50%;
       transform: translate(-50%, -50%);
       font-size: 35px;
@@ -122,7 +122,7 @@
 
     .header-button {
       position: absolute;
-      top: 32%;
+      top: 300px;
       left: 50%;
       transform: translate(-50%, -50%);
       font-size: 25px;

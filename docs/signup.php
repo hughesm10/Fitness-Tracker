@@ -13,7 +13,7 @@
   ?>
 
   <form method="post" action="includes/signupinc.php" class="container">
-    <h1>Sign Up</h1>
+    <h1 style="color: #FDBE34;">Sign Up</h1>
     <p>Please fill in this form to create an account.</p>
     
     <br>
@@ -132,7 +132,7 @@
       background-color: #0D226B;
       color: white;
       border-radius: 30px;
-      width: 40%;
+      width: 600px;
       margin: auto;
       margin-top: 40px;
       margin-bottom: 210px;
