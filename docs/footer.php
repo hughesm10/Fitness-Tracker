@@ -24,7 +24,6 @@
     font-weight: 500;
     color: #FDBE34;
     text-align: center;
-    vertical-align: middle;
     line-height: 200px;
   }
 </style>

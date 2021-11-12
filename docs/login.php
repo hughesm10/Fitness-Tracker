@@ -93,7 +93,7 @@
       width: 40%;
       margin: auto;
       margin-top: 40px;
-      margin-bottom: 340px;
+      margin-bottom: 440px;
       padding: 10px;
     }
 

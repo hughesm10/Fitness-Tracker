@@ -12,50 +12,30 @@
     include_once 'header.php';
   ?>
 
-  <h1>Profile</h1>
-
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
+  <div class="cover">
+    <div style="background-color: white; text-align: center; color: #0D226B;">
+      <img src="img/nature-header.jpg" style="width: 100%;">
+      <img class="profile-pic" src="img/IMG_0162.JPG">
+  
+    
+    </div>
+  </div>
 
   <style>
     body {font-family: Arial, Helvetica, sans-serif; margin: 0;}
+
+    .cover {
+      width: 800px;
+      margin: auto;
+      background-color: lightblue;
+      min-height: 400px;
+    }
+
+    .profile-pic {
+      width: 150px;
+      border-radius: 50%;
+      border: solid 2px white;
+    }
 
   </style>
 

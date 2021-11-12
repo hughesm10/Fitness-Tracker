@@ -135,7 +135,7 @@
       width: 40%;
       margin: auto;
       margin-top: 40px;
-      margin-bottom: 110px;
+      margin-bottom: 210px;
       padding: 10px;
     }
 

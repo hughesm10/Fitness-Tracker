@@ -160,13 +160,13 @@
     </div>  
     <script>
         function openTab(tabName) {
-                var i, x;
-                x = document.getElementsByClassName("containerTab");
-                for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";
-                }
-                document.getElementById(tabName).style.display = "block";
+            var i, x;
+            x = document.getElementsByClassName("containerTab");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
             }
+            document.getElementById(tabName).style.display = "block";
+        }
     </script>
 
     <style>
@@ -209,14 +209,7 @@
             grid-column-gap: 20px;
             grid-row-gap: 20px;
         }
-    
-        /* Clear floats after the columns */
-        .row:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-    
+
         /* Closable button inside the container tab */
         .closebtn {
             float: right;
