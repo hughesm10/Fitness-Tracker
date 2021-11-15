@@ -14,8 +14,7 @@
 
   <form method="post" action="includes/logininc.php" class="container">
     <h1 style="color: #FDBE34;">Login</h1>
-    <p>Please fill in this form to login.</p>
-    <br>
+    <p>Please fill in this form to login.</p><br>
 
     <label for="uid"><b>Username or Email</b></label><br>
     <input type="text" placeholder="Enter Username or Email" name="uid" id="uid" required><br>
@@ -77,7 +76,7 @@
       display: inline-block;
     }
 
-    .bottom-buttons{
+    .bottom-buttons {
       text-align: center;
     }
 
@@ -102,7 +101,6 @@
       width: 50%; 
       text-align: left;
     }
-
   </style>
 
   <?php

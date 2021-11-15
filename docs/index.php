@@ -16,6 +16,7 @@
     }
   ?>
 
+  <!--header section-->
   <div class="header">
     <img src="img/8225.jpg">
     <p class="header-text">FITNESS TRACKER</p>

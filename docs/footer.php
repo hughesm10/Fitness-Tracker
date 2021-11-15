@@ -1,7 +1,5 @@
 <footer>
-  
   <h1>FITNESS TRACKER</h1>
-
 </footer>
 
 <style>

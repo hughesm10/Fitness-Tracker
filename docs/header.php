@@ -55,9 +55,7 @@
     font-size: 18px;
   }
 
-  .topnav-right {
-    float: right;
-  }
+  .topnav-right {float: right;}
 
   .dropbtn {
     margin-top: 5px;
@@ -67,10 +65,7 @@
     cursor: pointer;
   }
 
-  .dropdown:hover {
-    background-color: #0B409C;
-    color: white;
-  }
+  .dropdown:hover {background-color: #0B409C; color: white;}
 
   .dropdown-content {
     display: none;
@@ -98,9 +93,7 @@
 
   .dropdown-content a:hover {background-color: #ddd; color: #0B409C;}
 
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
+  .dropdown:hover .dropdown-content {display: block;}
 
   .signup-button, .login-button {
     border-radius: 12px;   
@@ -116,8 +109,5 @@
     margin: 10px 20px 10px 0px;
   }
 
-  .signup-button:hover, .login-button:hover{
-    background-color: white;
-    color: #0B409C;
-  }
+  .signup-button:hover, .login-button:hover {background-color: white; color: #0B409C;}
 </style>

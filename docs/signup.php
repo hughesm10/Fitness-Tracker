@@ -14,9 +14,7 @@
 
   <form method="post" action="includes/signupinc.php" class="container">
     <h1 style="color: #FDBE34;">Sign Up</h1>
-    <p>Please fill in this form to create an account.</p>
-    
-    <br>
+    <p>Please fill in this form to create an account.</p><br>
 
     <label for="email"><b>Email</b></label><br>
     <input type="email" placeholder="Enter Email" name="email" id="email" required><br>
@@ -32,9 +30,8 @@
 
     <label style="width: fit-content">
       <input type="checkbox" name="tos" id="tos" style="margin-bottom: 15px;" required> By creating an account, you agree to our <a href="tos.php" style="color: LightSkyBlue">Terms & Conditions</a>.
-    </label>
-
-    <br>
+    </label><br>
+    
     <br>
 
     <div class="bottom-buttons">
@@ -72,16 +69,14 @@
   </form>
 
   <script>
-
+    // clears form fields
     function clearInputs() {
-
       document.getElementById('uid').value = '';
       document.getElementById('email').value = '';
       document.getElementById('pwd').value = '';
       document.getElementById('pwdrepeat').value = '';
       document.getElementById('tos').checked = false;
     }
-
   </script>
 
   <style>
