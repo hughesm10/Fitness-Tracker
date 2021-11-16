@@ -15,7 +15,7 @@
     <!-- !PAGE CONTENT! -->
     <div style="margin-top: 20px;">
 
-        <h1 style="text-align: left; margin: 20px;">Trend Overview</h1>
+        <h1 style="text-align: left; margin-top: 20px;">Trend Overview</h1>
 
         <!-- Four columns -->
         <div class="row">

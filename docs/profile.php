@@ -27,6 +27,26 @@
       <div class="menu-buttons">Settings</div>
     
     </div>
+
+    <!--below cover area-->
+    <div style="display: flex;">
+      <!--friends area-->
+      <div style="background-color: green; min-height: 100px; flex: 1;">
+        <div class="friends-bar">
+          Friends<br>
+
+          <div class="friends">
+
+          </div>
+        </div>
+      </div>
+
+      <!--posts area-->
+      <div style="background-color: grey; min-height: 100px; flex: 2.5;">
+    
+      </div>
+    </div>
+
   </div>
 
   <style>
@@ -35,8 +55,7 @@
     .cover {
       width: 800px;
       margin: auto;
-      background-color: lightblue;
-      min-height: 400px;
+      min-height: 300px;
     }
 
     .profile-pic {
@@ -52,6 +71,6 @@
       margin: 2px;
     }
   </style>
-  
+
 </body>
 </html>
