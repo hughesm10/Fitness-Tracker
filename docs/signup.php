@@ -12,6 +12,8 @@
     include_once 'header.php';
   ?>
 
+  <br>
+
   <form method="post" action="includes/signupinc.php" class="container">
     <h1 style="color: #FDBE34;">Sign Up</h1>
     <p>Please fill in this form to create an account.</p><br>
@@ -80,7 +82,7 @@
   </script>
 
   <style>
-    body {margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif;}
+    body {margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; margin-top: 60px;}
     * {box-sizing: border-box}
 
     /* Full-width input fields */
@@ -129,8 +131,7 @@
       border-radius: 30px;
       width: 600px;
       margin: auto;
-      margin-top: 40px;
-      margin-bottom: 210px;
+      margin-bottom: 400px;
       padding: 10px;
     }
 
@@ -144,6 +145,6 @@
   <?php
     include_once 'footer.php';
   ?>
-
+  
 </body>
 </html>

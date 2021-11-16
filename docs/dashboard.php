@@ -170,16 +170,9 @@
     </script>
 
     <style>
-        * {
-            box-sizing: border-box;
-        }
+        * {box-sizing: border-box;}
     
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: white;
-        }
+        body {margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; margin-top: 60px;}
 
         .column {
             background-color: #333;
@@ -218,10 +211,6 @@
             cursor: pointer;
         }
     </style>
-
-    <?php
-        include_once 'footer.php';
-    ?>
 
 </body>
 </html>

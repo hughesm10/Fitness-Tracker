@@ -16,13 +16,21 @@
     <div style="background-color: white; text-align: center; color: #0D226B;">
       <img src="img/nature-header.jpg" style="width: 100%;">
       <img class="profile-pic" src="img/IMG_0162.JPG">
-  
+      <br>
+        <div style="font-size: 20px;">Matthew Hughes</div>
+      <br>
+
+      <div class="menu-buttons">Timeline</div>
+      <div class="menu-buttons">About</div>
+      <div class="menu-buttons">Friends</div>
+      <div class="menu-buttons">Photos</div>
+      <div class="menu-buttons">Settings</div>
     
     </div>
   </div>
 
   <style>
-    body {font-family: Arial, Helvetica, sans-serif; margin: 0;}
+    body {margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; margin-top: 60px;}
 
     .cover {
       width: 800px;
@@ -33,15 +41,17 @@
 
     .profile-pic {
       width: 150px;
+      margin-top: -400px;
       border-radius: 50%;
       border: solid 2px white;
     }
 
+    .menu-buttons {
+      width: 100px;
+      display: inline-block;
+      margin: 2px;
+    }
   </style>
-
-  <?php
-    include_once 'footer.php';
-  ?>
-
+  
 </body>
 </html>

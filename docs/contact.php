@@ -12,8 +12,10 @@
     include_once 'header.php';
   ?>
 
+  <br>
+
   <form method="post" class="container">
-    <h1>Contact</h1>
+    <h1 style="color: #FDBE34;">Contact</h1>
     <p>Please fill in this form to contact us.</p>
     <br>
 
@@ -26,7 +28,7 @@
     <div class="bottom-buttons">
       <button type="button" class="cancelbtn" onclick="document.getElementById('email').value = ''; document.getElementById('message').value = '';">Cancel</button>
       <button type="submit">Submit</button>
-    </div>
+    </div><br>
   </form>
 
   <br>
@@ -50,7 +52,7 @@
   <br>
   
   <style>
-    body {margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif;}
+    body {margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; margin-top: 60px;}
     * {box-sizing: border-box}
 
     /* Full-width input fields */
@@ -110,12 +112,11 @@
       text-align: center;
       background-color: #0D226B;
       color: white;
-      border-radius: 20px;
-      width: 50%;
+      border-radius: 30px;
+      width: 600px;
       margin: auto;
-      margin-top: 40px;
-      margin-bottom: 40px;
-      padding: 20px;
+      margin-bottom: 400px;
+      padding: 10px;
     }
 
     .container label {

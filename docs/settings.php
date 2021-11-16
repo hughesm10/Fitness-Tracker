@@ -89,13 +89,9 @@
   
 
   <style>
-    body {margin: 0; font-family: Arial, Helvetica, sans-serif;}
+    body {margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; margin-top: 60px;}
  
   </style>
-
-  <?php
-    include_once 'footer.php';
-  ?>
 
 </body>
 </html>
