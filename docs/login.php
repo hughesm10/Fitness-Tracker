@@ -25,7 +25,7 @@
     <input type="password" placeholder="Enter Password" name="pwd" id="pwd" required><br>
 
     <div class="bottom-buttons">
-      <button type="button" class="cancelbtn" onclick="document.getElementById('uid').value = ''; document.getElementById('pwd').value = '';">Cancel</button>
+      <button type="reset" class="cancelbtn">Cancel</button>
       <button type="submit" class="signupbtn" name="submit">Login</button>
     </div>
 

@@ -37,7 +37,7 @@
     <br>
 
     <div class="bottom-buttons">
-      <button type="button" class="cancelbtn" onclick="clearInputs()">Cancel</button>
+      <button type="reset" class="cancelbtn">Cancel</button>
       <button type="submit" class="signupbtn" name="submit">Sign Up</button>
     </div>
 
@@ -69,17 +69,6 @@
       }
     ?>
   </form>
-
-  <script>
-    // clears form fields
-    function clearInputs() {
-      document.getElementById('uid').value = '';
-      document.getElementById('email').value = '';
-      document.getElementById('pwd').value = '';
-      document.getElementById('pwdrepeat').value = '';
-      document.getElementById('tos').checked = false;
-    }
-  </script>
 
   <style>
     body {margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; margin-top: 60px;}
