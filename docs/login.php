@@ -15,7 +15,7 @@
   <br>
 
   <form method="post" action="includes/logininc.php" class="container">
-    <h1 style="color: #FDBE34;">Login</h1>
+    <h1>Login</h1>
     <p>Please fill in this form to login.</p><br>
 
     <label for="uid"><b>Username or Email</b></label><br>
@@ -29,7 +29,7 @@
       <button type="submit" class="signupbtn" name="submit">Login</button>
     </div>
 
-    <p>Don't have an account? <a href="signup.php" style="color: LightSkyBlue">Sign Up</a>.</p>
+    <p>Don't have an account? <a href="signup.php" style="color: Blue">Sign Up</a>.</p>
 
     <?php
       if (isset($_GET["error"])) {
@@ -88,8 +88,8 @@
   
     .container {
       text-align: center;
-      background-color: #0D226B;
-      color: white;
+      background-color: Silver;
+      color: black;
       border-radius: 30px;
       width: 600px;
       margin: auto;

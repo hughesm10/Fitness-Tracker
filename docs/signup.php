@@ -15,7 +15,7 @@
   <br>
 
   <form method="post" action="includes/signupinc.php" class="container">
-    <h1 style="color: #FDBE34;">Sign Up</h1>
+    <h1>Sign Up</h1>
     <p>Please fill in this form to create an account.</p><br>
 
     <label for="email"><b>Email</b></label><br>
@@ -31,7 +31,7 @@
     <input type="password" placeholder="Confirm Password" name="pwdrepeat" id="pwdrepeat" required><br>
 
     <label style="width: fit-content">
-      <input type="checkbox" name="tos" id="tos" style="margin-bottom: 15px;" required> By creating an account, you agree to our <a href="tos.php" style="color: LightSkyBlue">Terms & Conditions</a>.
+      <input type="checkbox" name="tos" id="tos" style="margin-bottom: 15px;" required> By creating an account, you agree to our <a href="tos.php" style="color: Blue">Terms & Conditions</a>.
     </label><br>
     
     <br>
@@ -41,7 +41,7 @@
       <button type="submit" class="signupbtn" name="submit">Sign Up</button>
     </div>
 
-    <p>Already have an account? <a href="login.php" style="color: LightSkyBlue">Login</a>.</p>
+    <p>Already have an account? <a href="login.php" style="color: Blue">Login</a>.</p>
 
     <?php
       if (isset($_GET["error"])) {
@@ -115,8 +115,8 @@
   
     .container {
       text-align: center;
-      background-color: #0D226B;
-      color: white;
+      background-color: Silver;
+      color: black;
       border-radius: 30px;
       width: 600px;
       margin: auto;

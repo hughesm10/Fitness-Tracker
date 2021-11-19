@@ -15,7 +15,7 @@
   <br>
 
   <form method="post" class="container">
-    <h1 style="color: #FDBE34;">Contact</h1>
+    <h1>Contact</h1>
     <p>Please fill in this form to contact us.</p>
     <br>
 
@@ -26,30 +26,10 @@
     <textarea placeholder="Enter Message" name="message" id="message" required></textarea><br>
 
     <div class="bottom-buttons">
-      <button type="button" class="cancelbtn" onclick="document.getElementById('email').value = ''; document.getElementById('message').value = '';">Cancel</button>
+      <button type="reset" class="cancelbtn">Cancel</button>
       <button type="submit">Submit</button>
     </div><br>
   </form>
-
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
   
   <style>
     body {margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; margin-top: 60px;}
@@ -110,8 +90,8 @@
   
     .container {
       text-align: center;
-      background-color: #0D226B;
-      color: white;
+      background-color: Silver;
+      color: black;
       border-radius: 30px;
       width: 600px;
       margin: auto;

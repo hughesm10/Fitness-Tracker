@@ -36,6 +36,9 @@
           Friends<br>
 
           <div class="friends">
+            <img class="friends-img" src="img/IMG_0162.JPG">
+            <br>
+            Matthew Hughes
 
           </div>
         </div>
