@@ -5,7 +5,7 @@
 <div class="topnav">
   <a href="index.php">Home</a>
   <a href="dashboard.php">Dashboard</a>
-  <a href="feed.php">Feed</a>
+  <a href="timeline.php">Timeline</a>
   <div class="topnav-right">
     <?php
       if(isset($_SESSION["userid"]))

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Profile</title>
+  <title>Timeline</title>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">  
@@ -13,57 +13,15 @@
   ?>
 
   <div class="cover">
-    <div style="background-color: white; text-align: center; color: #0D226B;">
-      <img src="img/nature-header.jpg" style="width: 100%;">
-      <img class="profile-pic" src="img/IMG_0162.JPG">
-      <br>
-        <div style="font-size: 30px;">Matthew Hughes</div>
-      <br>
-
-      <div class="menu-buttons">Timeline</div>
-      <div class="menu-buttons">About</div>
-      <div class="menu-buttons">Friends</div>
-      <div class="menu-buttons">Photos</div>
-      <div class="menu-buttons">Settings</div>
     
-    </div>
 
     <!--below cover area-->
     <div style="display: flex;">
       <!--friends area-->
       <div style="min-height: 400px; flex: 1;">
         <div class="friends-bar">
-          Friends<br>
-
-          <div class="friends">
-            <img class="friends-img" src="img/IMG_0162.JPG">
-            <br>
-            First User
-          </div>
-
-          <div class="friends">
-            <img class="friends-img" src="img/IMG_0162.JPG">
-            <br>
-            Second User
-          </div>
-
-          <div class="friends">
-            <img class="friends-img" src="img/IMG_0162.JPG">
-            <br>
-            Third User
-          </div>
-
-          <div class="friends">
-            <img class="friends-img" src="img/IMG_0162.JPG">
-            <br>
-            Fourth User
-          </div>
-
-          <div class="friends">
-            <img class="friends-img" src="img/IMG_0162.JPG">
-            <br>
-            Fifth User
-          </div>
+          <img src="img/IMG_0162.JPG" class="profile-pic"><br>
+          Matthew Hughes
 
         </div>
 
@@ -168,7 +126,6 @@
 
     .profile-pic {
       width: 150px;
-      margin-top: -400px;
       border-radius: 50%;
       border: solid 2px white;
     }
@@ -186,10 +143,12 @@
 
     .friends-bar {
       background-color: white;
-      min-height: 400px;
+      min-height: 200px;
       margin-top: 20px;
-      color: #0B409C;
+      color: black;
       padding: 8px;
+      text-align: center;
+      font-size: 20px;
     }
 
     .friends {
