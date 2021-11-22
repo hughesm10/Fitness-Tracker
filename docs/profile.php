@@ -156,8 +156,8 @@
       margin: 0; 
       padding: 0; 
       font-family: Arial, Helvetica, sans-serif; 
-      margin-top: 60px;
       background-color: lightgrey;
+      margin-top: 42px;
     }
 
     .cover {

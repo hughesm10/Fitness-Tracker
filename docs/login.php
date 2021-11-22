@@ -39,12 +39,16 @@
         elseif ($_GET["error"] == "wronglogin") {
           echo "<p style='font-size:25px;color:red;'>Incorrect login!</p>";
         }
+        elseif ($_GET["error"] == "none") {
+          header("Location: profile.php");
+          exit();
+        }
       }
     ?>
   </form>
 
   <style>
-    body {margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; margin-top: 60px;}
+    body {margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; margin-top: 42px;}
     * {box-sizing: border-box}
 
     /* Full-width input fields */
@@ -93,7 +97,7 @@
       border-radius: 30px;
       width: 600px;
       margin: auto;
-      margin-bottom: 400px;
+      margin-bottom: 600px;
       padding: 10px;
     }
 
