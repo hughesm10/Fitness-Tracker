@@ -8,6 +8,7 @@
 </head>
 <body>
 
+  <!--navbar section-->
   <?php
     include_once 'header.php';
   ?>
@@ -15,7 +16,7 @@
   <br>
 
   <form method="post" action="includes/signupinc.php" class="container">
-    <h1>Sign Up</h1>
+    <h1 style="color: #E2C1A1;">Sign Up</h1>
     <p>Please fill in this form to create an account.</p><br>
 
     <label for="email"><b>Email</b></label><br>
@@ -95,7 +96,7 @@
       background-color: white;
       color: black;
       font-size: 20px;
-      font-weight: 500;
+      font-weight: 550;
       border: none;
       border-radius: 12px;
       cursor: pointer;
@@ -116,7 +117,8 @@
       border-radius: 30px;
       width: 600px;
       margin: auto;
-      margin-bottom: 40px;
+      margin-top: 60px;
+      margin-bottom: 60px;
       padding: 10px;
     }
 

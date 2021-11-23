@@ -15,7 +15,7 @@
   <br>
 
   <form method="post" class="container">
-    <h1>Contact</h1>
+    <h1 style="color: #E2C1A1;">Contact</h1>
     <p>Please fill in this form to contact us.</p>
     <br>
 
@@ -70,7 +70,7 @@
       background-color: white;
       color: black;
       font-size: 20px;
-      font-weight: 500;
+      font-weight: 550;
       border: none;
       border-radius: 12px;
       cursor: pointer;
@@ -91,7 +91,8 @@
       border-radius: 30px;
       width: 600px;
       margin: auto;
-      margin-bottom: 40px;
+      margin-top: 60px;
+      margin-bottom: 60px;
       padding: 10px;
     }
 

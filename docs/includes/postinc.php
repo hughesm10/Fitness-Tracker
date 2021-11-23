@@ -1,6 +1,6 @@
 <?php
 
-if (isset($_POST["submit"]) && isset($_SESSION["userid"])) {
+if (isset($_POST["submit"])) {
     
     $username = $_SESSION["userid"];
     $post = $_POST["post"];

@@ -8,6 +8,7 @@
 </head>
 <body>
 
+  <!--navbar section-->
   <?php
     include_once 'header.php';
   ?>
@@ -22,9 +23,11 @@
 
   <!-- About Section -->
   <div style="padding: 20px;">
-    <h3 style="text-align: center; display: inline-block; width: 100%; font-size: 24px;">ABOUT FITNESS TRACKER</h3>
+    <h1 style="text-align: center; display: inline-block; width: 100%; font-size: 24px;">ABOUT FITNESS TRACKER</h1>
     <p style="text-align: center; display: inline-block; width: 100%; font-size: 18px;">Key features of the website</p>
-    <div style="margin-top:64px; padding: 0 8px; text-align: center;">
+    <input type="button" class="about-button" value="About Us" onclick="location.href='about.php';">
+    <br>
+    <div style="margin-top:80px; padding: 0 8px; text-align: center;">
       <div style="width: 33%; float: left;">
         <img src="https://img.icons8.com/fluency/48/000000/dashboard.png" style="width: 60px;">
         <p style="font-size: 36px;">Dashboard</p>
@@ -69,15 +72,6 @@
     <img class="bottom-img" src="img/11101.jpg">
   </div>
 
-  <!-- Contact Us section -->
-  <div style="color: black; background-color: #E2C1A1; text-align: center; display: inline-block; width: 100%; height: 200px;">
-    <div>
-      <h1 style="font-size: 30px;">Contact Us</h1>
-      <p>Let's get in touch. Send us a message:</p>
-      <input type="button" class="contact-button" value="Contact Us" onclick="location.href='contact.php';">
-    </div>
-  </div>
-
   <style>
     body {margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; margin-top: 40px;}
 
@@ -92,7 +86,7 @@
       top: 120px;
       left: 50%;
       transform: translate(-50%, -50%);
-      font-size: 60px;
+      font-size: 50px;
       text-align: center;
       color: #0177CC;
     }
@@ -102,7 +96,7 @@
       top: 200px;
       left: 50%;
       transform: translate(-50%, -50%);
-      font-size: 35px;
+      font-size: 30px;
       text-align: center;
       color: #0177CC;
     }
@@ -112,7 +106,7 @@
       top: 300px;
       left: 50%;
       transform: translate(-50%, -50%);
-      font-size: 25px;
+      font-size: 20px;
       text-align: center;
       border-radius: 12px;
       height: fit-content;   
@@ -126,30 +120,16 @@
       padding: 10px;
     }
 
-    .header-button:hover, .contact-button:hover {
-      font-size: 25px;
-      font-weight: 500;
-      background-color: white;
-      color: #0177CC;
-    }
-
-    .contact-button:hover {
-      background-color: #E2C1A1;
-      color: white;
-    }
-
-    .bottom-img {
-      height: 50%;
-      width: 50%;
-      display: block;
-      margin: auto;
-    }
-
-    .contact-button {
+    .about-button {
+      position: absolute;
+      top: 730px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 20px;
+      text-align: center;
       border-radius: 12px;
       height: fit-content;   
       width: fit-content;
-      font-size: 25px;
       font-weight: 500;
       background-color: #0177CC;
       color: white;
@@ -157,6 +137,27 @@
       cursor: pointer;
       margin: 0;
       padding: 10px;
+    }
+
+    .header-button:hover {
+      font-size: 25px;
+      font-weight: 500;
+      background-color: white;
+      color: #0177CC;
+    }
+
+    .about-button:hover {
+      font-size: 20px;
+      font-weight: 500;
+      background-color: white;
+      color: #0177CC;
+    }
+
+    .bottom-img {
+      height: 50%;
+      width: 50%;
+      display: block;
+      margin: auto;
     }
   </style>
 

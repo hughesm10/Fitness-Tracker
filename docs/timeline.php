@@ -20,7 +20,21 @@
       <div style="min-height: 400px; flex: 1;">
         <div class="friends-bar">
           <img src="img/IMG_0162.JPG" class="profile-pic"><br>
-          Matthew Hughes
+          
+          <?php
+            if(isset($_SESSION["userid"]))
+            {
+          ?>
+            <p><?= $_SESSION['useruid']; ?></p>
+          <?php
+            }
+            else
+            {
+          ?>
+            <input type="button" class="navbar-button" value="Login" onclick="location.href='login.php';">
+          <?php
+            }
+          ?>
 
         </div>
 
@@ -171,7 +185,7 @@
       margin: 0; 
       padding: 0; 
       font-family: Arial, Helvetica, sans-serif; 
-      margin-top: 40px;
+      margin-top: 60px;
       background-color: lightgrey;
     }
 
@@ -187,17 +201,6 @@
       border: solid 2px white;
     }
 
-    .menu-buttons {
-      width: 100px;
-      display: inline-block;
-      margin: 2px;
-    }
-
-    .friends-img {
-      width: 75px;
-      float: left;
-    }
-
     .friends-bar {
       background-color: white;
       min-height: 200px;
@@ -208,11 +211,6 @@
       font-size: 20px;
     }
 
-    .friends {
-      clear: both;
-      font-size: 16px;
-      color: #0B409C;
-    }
 
     textarea {
       width: 100%;

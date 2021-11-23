@@ -12,12 +12,12 @@
   ?>
     <a href="timeline.php">Timeline</a>
     <div class="dropdown">
-    <input type="image" class="dropbtn" src="https://img.icons8.com/ios-glyphs/30/ffffff/user--v1.png" width="30" height="30" style="margin-top: -5px;" onclick="myFunction();">
-    <div class="dropdown-content" id="myDropdown">
-      <a href="profile.php">Profile</a>
-      <a href="dashboard.php">Dashboard</a>
-      <a href="includes/logoutinc.php">Log out</a>
-    </div>
+    <input type="image" class="dropbtn" src="https://img.icons8.com/ios-glyphs/30/ffffff/user--v1.png" width="40" height="40" style="padding: 0; margin-right: 30px;" onclick="myFunction();">
+      <div class="dropdown-content" id="myDropdown">
+        <a href="profile.php">Profile</a>
+        <a href="dashboard.php">Dashboard</a>
+        <a href="includes/logoutinc.php">Log Out</a>
+      </div>
     </div>
   <?php
     }
@@ -63,13 +63,13 @@ window.onclick = function(e) {
     left: 0;
     top: 0;
     width: 100%;
-    height: 40px;
     z-index: 999;
+    padding: 10px;
   }
 
   .navbar a {
     float: left;
-    font-size: 16px;
+    font-size: 20px;
     color: white;
     text-align: center;
     padding: 10px 10px;
@@ -80,15 +80,15 @@ window.onclick = function(e) {
     float: right;
     border-radius: 12px;   
     width: fit-content;
-    line-height: 14px;
-    font-size: 16px;
+    line-height: 18px;
+    font-size: 20px;
     font-weight: 500;
     background-color: #0177CC;
     color: white;
     border: solid white 2px;
     cursor: pointer;
     padding: 6px 14px;
-    margin: 5px 20px 5px 0px;
+    margin: 4px 10px 5px 0px;
   }
 
   .navbar-button:hover {background-color: white; color: #0177CC;}
@@ -114,16 +114,16 @@ window.onclick = function(e) {
   .dropdown-content {
     display: none;
     position: absolute;
-    top: 40px;
-    right: 20px;
-    background-color: #0D226B;
+    top: 50px;
+    right: 30px;
+    background-color: #E2C1A1;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     border-radius: 12px;
     z-index: 1;
   }
 
   .dropdown-content a {
-    color: white;
+    color: black;
     font-size: 18px;
     padding: 8px 16px;
     text-decoration: none;
@@ -133,9 +133,8 @@ window.onclick = function(e) {
   }
 
   .dropdown-content a:hover {
-    background-color: lightgrey;
-    color: black;
     border-radius: 12px;
+    color: white;
   }
 
   .show {display: block;}

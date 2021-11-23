@@ -12,7 +12,7 @@
         include_once 'header.php';
     ?> 
 
-    <h1>Trend Overview</h1>
+    <h1 style="padding: 20px; font-size: 40px;">Trend Overview</h1>
 
     <!-- Four columns -->
     <div class="row">
@@ -65,7 +65,7 @@
     
     <div style="padding: 20px;">
         <h5>Recent Data Added</h5>
-        <table style="width: 75%;">
+        <table style="width: 100%;">
             <tr>
                 <td><img src="https://img.icons8.com/fluency-systems-filled/96/000000/healthy-food-calories-calculator.png" style="width: 10%;"/></td>
                 <td>New record, over 900 calories.</td>
@@ -124,33 +124,31 @@
 
     <div style="padding: 20px;">
         <h5>More Trends</h5>
-        <table style="width: 50%;">
-            <tbody>
-                <tr>
-                    <td>&nbsp;Sleep</td>
-                    <td>&nbsp;-9.7%</td>
-                </tr>
-                <tr style="background-color: lightgray;">
-                    <td>&nbsp;Water intake</td>
-                    <td>&nbsp;+21.2%</td>
-                </tr>
-                <tr>
-                    <td>&nbsp;Heart rate</td>
-                    <td>&nbsp;+5.6%</td>
-                </tr>
-                <tr style="background-color: lightgray;">
-                    <td>&nbsp;Distance moved</td>
-                    <td>&nbsp;+15.5%</td>
-                </tr>
-                <tr>
-                    <td>&nbsp;Floors walked</td>
-                    <td>&nbsp;+7.1%</td>
-                </tr>
-                    <tr style="background-color: lightgray;">
-                    <td>&nbsp;Weight</td>
-                    <td>&nbsp;+10.3%</td>
-                </tr>
-            </tbody>
+        <table style="width: 100%;">
+            <tr style="height: 50px;">
+                <td>Sleep</td>
+                <td>-9.7%</td>
+            </tr>
+            <tr style="background-color: lightgray; height: 50px;">
+                <td>Water intake</td>
+                <td>+21.2%</td>
+            </tr>
+            <tr style="height: 50px;">               
+                <td>Heart rate</td>
+                <td>+5.6%</td>
+            </tr>
+            <tr style="background-color: lightgray; height: 50px;">               
+                <td>Distance moved</td>
+                <td>+15.5%</td>
+            </tr>
+            <tr style="height: 50px;">             
+                <td>Floors walked</td>
+                <td>+7.1%</td>
+            </tr>
+            <tr style="background-color: lightgray; height: 50px;">  
+                <td>Weight</td>
+                <td>+10.3%</td>
+            </tr>
         </table>
     </div>
 
@@ -166,7 +164,11 @@
     </script>
 
     <style>  
-        body {margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; margin-top: 40px;}
+        body {margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; margin-top: 60px;}
+
+        h5 {
+            font-size: 25px;
+        }
 
         .column {
             background-color: #333;

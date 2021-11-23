@@ -8,6 +8,7 @@
 </head>
 <body>
 
+  <!--navbar section-->
   <?php
     include_once 'header.php';
   ?>

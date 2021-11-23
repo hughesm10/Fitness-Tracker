@@ -8,6 +8,7 @@
 </head>
 <body>
 
+  <!--navbar section-->
   <?php
     include_once 'header.php';
   ?>
@@ -20,11 +21,11 @@
         <div style="font-size: 30px;">Matthew Hughes</div>
       <br>
 
-      <div class="menu-buttons">Timeline</div>
-      <div class="menu-buttons">About</div>
-      <div class="menu-buttons">Friends</div>
-      <div class="menu-buttons">Photos</div>
-      <div class="menu-buttons">Settings</div>
+      <div class="menu-buttons" onclick="location.href='about.php';">About</div>
+      <div class="menu-buttons" onclick="location.href='timeline.php';">Timeline</div>
+      <div class="menu-buttons" onclick="location.href='dashboard.php';">Dashboard</div>
+      <div class="menu-buttons" onclick="location.href='contact.php';">Contact</div>
+      <div class="menu-buttons" onclick="location.href='includes/logoutinc.php';">Log Out</div>
     
     </div>
 
@@ -179,6 +180,11 @@
       width: 100px;
       display: inline-block;
       margin: 2px;
+    }
+
+    .menu-buttons:hover {
+      cursor: pointer;
+      color: #0177CC;
     }
 
     .friends-img {

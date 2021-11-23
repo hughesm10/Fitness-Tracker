@@ -131,7 +131,7 @@ function loginUser($conn, $username, $pwd) {
 
 // creates post in database
 function createPost($conn, $username, $post, $date) {
-    $sql = "INSERT INTO posts (usersUid, postsText, postsDate) VALUES (?, ?, ?);";
+    $sql = "INSERT INTO posts (usersId, postsText, postsDate) VALUES (?, ?, ?);";
     $stmt = mysqli_stmt_init($conn);
     if (!mysqli_stmt_prepare($stmt, $sql)) {
         header("Location: ../profile.php?error=stmtfailed");
@@ -141,7 +141,7 @@ function createPost($conn, $username, $post, $date) {
     mysqli_stmt_bind_param($stmt, "sss", $username, $post, $date);
     mysqli_stmt_execute($stmt);
     mysqli_stmt_close($stmt);
-    header("Location: ../profile.php?error=none");
+    header("Location: ../timeline.php?error=none");
     exit();
 }
 
@@ -155,4 +155,16 @@ function emptyInputPost($post) {
         $result  = false;
     }
     return $result;
+}
+
+function getPosts() {
+	// use global $conn object in function
+	global $conn;
+	$sql = "SELECT * FROM posts";
+	$result = mysqli_query($conn, $sql);
+
+	// fetch all posts as an associative array called $posts
+	$posts = mysqli_fetch_all($result, MYSQLI_ASSOC);
+
+	return $posts;
 }
