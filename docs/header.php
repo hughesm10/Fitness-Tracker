@@ -4,19 +4,20 @@
 
 <div class="navbar">
   <a href="index.php">Home</a>
-  <a href="dashboard.php">Dashboard</a>
-  <a href="timeline.php">Timeline</a>
+  <a href="about.php">About</a>
 
   <?php
     if(isset($_SESSION["userid"]))
     {
   ?>
+    <a href="timeline.php">Timeline</a>
     <div class="dropdown">
-      <img class="dropbtn" src="https://img.icons8.com/external-kiranshastry-solid-kiranshastry/64/ffffff/external-user-interface-kiranshastry-solid-kiranshastry.png" onclick="location.href='profile.php';">
-      <div class="dropdown-content">
-        <a href="settings.php">Settings</a>
-        <a href="includes/logoutinc.php">Log out</a>
-      </div>
+    <input type="image" class="dropbtn" src="https://img.icons8.com/ios-glyphs/30/ffffff/user--v1.png" width="30" height="30" style="margin-top: -5px;" onclick="myFunction();">
+    <div class="dropdown-content" id="myDropdown">
+      <a href="profile.php">Profile</a>
+      <a href="dashboard.php">Dashboard</a>
+      <a href="includes/logoutinc.php">Log out</a>
+    </div>
     </div>
   <?php
     }
@@ -29,6 +30,24 @@
     }
   ?>
 </div>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
 
 
 <style>
@@ -54,7 +73,7 @@
     font-size: 16px;
     color: white;
     text-align: center;
-    padding: 10px 16px;
+    padding: 10px 10px;
     text-decoration: none;
   }
 
@@ -75,16 +94,22 @@
 
   .navbar-button:hover {background-color: white; color: #0B409C;}
 
-  .dropbtn {
-    width: 40px;
-    height: 40px;
-    margin-right: 20px;
-  }
-
   .dropdown {
+    float: right;
     position: relative;
     display: inline-block;
-    float: right;
+  }
+
+  .dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 10px 20px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
   }
 
   .dropdown-content {
@@ -114,8 +139,6 @@
     border-radius: 12px;
   }
 
-  .dropdown:hover .dropdown-content {display: inline-block;}
-
-  .dropbtn:hover {cursor: pointer;}
+  .show {display: block;}
 
 </style>

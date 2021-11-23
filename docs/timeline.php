@@ -30,7 +30,7 @@
       <div style="min-height: 400px; flex: 2.5; padding: 20px; padding-right: 0px;">
 
         <div style="border: solid thin #aaa; padding: 10px; background-color: white;">
-          <textarea placeholder="What's on your mind?"></textarea>
+          <textarea style="resize: none;" placeholder="What's on your mind?"></textarea>
           <input type="submit" class="post-button" value="Post">
           <br>
         </div>
@@ -171,7 +171,7 @@
       margin: 0; 
       padding: 0; 
       font-family: Arial, Helvetica, sans-serif; 
-      margin-top: 42px;
+      margin-top: 40px;
       background-color: lightgrey;
     }
 

@@ -1,5 +1,6 @@
 <?php
 
+// checks if signup inputs are empty
 function emptyInputSignup($email, $username, $pwd, $pwdrepeat) {
     $result;
     if (empty($email) || empty($username) || empty($pwd) || empty($pwdrepeat)) {
@@ -11,6 +12,7 @@ function emptyInputSignup($email, $username, $pwd, $pwdrepeat) {
     return $result;
 }
 
+// checks if username contains something that is not a-z, A-Z, or 0-9
 function invalidUid($username) {
     $result;
     if (!preg_match("/^[a-zA-Z0-9]*$/", $username)) {
@@ -22,6 +24,7 @@ function invalidUid($username) {
     return $result;
 }
 
+// checks if email is invalid
 function invalidEmail($email) {
     $result;
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
@@ -33,6 +36,7 @@ function invalidEmail($email) {
     return $result;
 }
 
+// checks if password and confirmation password match
 function pwdMatch($pwd, $pwdrepeat) {
     $result;
     if ($pwd !== $pwdrepeat) {
@@ -44,6 +48,7 @@ function pwdMatch($pwd, $pwdrepeat) {
     return $result;
 }
 
+// checks if user already exists in database
 function uidExists($conn, $username, $email) {
     $sql = "SELECT * FROM users WHERE usersUid = ? OR usersEmail = ?;";
     $stmt = mysqli_stmt_init($conn);
@@ -68,6 +73,7 @@ function uidExists($conn, $username, $email) {
     mysqli_stmt_close($stmt);
 }
 
+// creates user in database
 function createUser($conn, $email, $username, $pwd) {
     $sql = "INSERT INTO users (usersEmail, usersUid, usersPwd) VALUES (?, ?, ?);";
     $stmt = mysqli_stmt_init($conn);
@@ -85,6 +91,7 @@ function createUser($conn, $email, $username, $pwd) {
     exit();
 }
 
+// checks if login inputs are empty
 function emptyInputLogin($username, $pwd) {
     $result;
     if (empty($username) || empty($pwd)) {
@@ -96,6 +103,8 @@ function emptyInputLogin($username, $pwd) {
     return $result;
 }
 
+/* logs in user if they're not already logged in 
+and their input password matches database password */
 function loginUser($conn, $username, $pwd) {
     $uidExists = uidExists($conn, $username, $username);
 
@@ -118,4 +127,32 @@ function loginUser($conn, $username, $pwd) {
         header("Location: ../index.php");
         exit();
     }
+}
+
+// creates post in database
+function createPost($conn, $username, $post, $date) {
+    $sql = "INSERT INTO posts (usersUid, postsText, postsDate) VALUES (?, ?, ?);";
+    $stmt = mysqli_stmt_init($conn);
+    if (!mysqli_stmt_prepare($stmt, $sql)) {
+        header("Location: ../profile.php?error=stmtfailed");
+        exit();
+    }
+
+    mysqli_stmt_bind_param($stmt, "sss", $username, $post, $date);
+    mysqli_stmt_execute($stmt);
+    mysqli_stmt_close($stmt);
+    header("Location: ../profile.php?error=none");
+    exit();
+}
+
+// checks if post input is empty
+function emptyInputPost($post) {
+    $result;
+    if (empty($post)) {
+        $result  = true;
+    }
+    else {
+        $result  = false;
+    }
+    return $result;
 }

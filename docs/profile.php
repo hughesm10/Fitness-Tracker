@@ -73,9 +73,11 @@
       <div style="min-height: 400px; flex: 2.5; padding: 20px; padding-right: 0px;">
 
         <div style="border: solid thin #aaa; padding: 10px; background-color: white;">
-          <textarea placeholder="What's on your mind?"></textarea>
-          <input type="submit" class="post-button" value="Post">
-          <br>
+          <form action="includes/postinc.php" method="post">
+            <textarea name="post" style="resize: none;" placeholder="What's on your mind?"></textarea>
+            <button type="submit" class="post-button">Post</button>
+            <br>
+          </form> 
         </div>
 
         <!--posts-->
@@ -157,7 +159,7 @@
       padding: 0; 
       font-family: Arial, Helvetica, sans-serif; 
       background-color: lightgrey;
-      margin-top: 42px;
+      margin-top: 40px;
     }
 
     .cover {

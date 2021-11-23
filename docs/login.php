@@ -48,7 +48,7 @@
   </form>
 
   <style>
-    body {margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; margin-top: 42px;}
+    body {margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; margin-top: 40px;}
     * {box-sizing: border-box}
 
     /* Full-width input fields */
