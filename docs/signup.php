@@ -31,7 +31,7 @@
     <input type="password" placeholder="Confirm Password" name="pwdrepeat" id="pwdrepeat" required><br>
 
     <label style="width: fit-content">
-      <input type="checkbox" name="tos" id="tos" style="margin-bottom: 15px;" required> By creating an account, you agree to our <a href="tos.php" style="color: Blue">Terms & Conditions</a>.
+      <input type="checkbox" name="tos" id="tos" style="margin-bottom: 15px;" required> By creating an account, you agree to our <a href="tos.php" style="color: LightPurple">Terms & Conditions</a>.
     </label><br>
     
     <br>
@@ -41,7 +41,7 @@
       <button type="submit" class="signupbtn" name="submit">Sign Up</button>
     </div>
 
-    <p>Already have an account? <a href="login.php" style="color: Blue">Login</a>.</p>
+    <p>Already have an account? <a href="login.php" style="color: LightPurple">Login</a>.</p>
 
     <?php
       if (isset($_GET["error"])) {
@@ -92,8 +92,8 @@
 
     /* Set a style for all buttons */
     button {  
-      background-color: #89CFF0;
-      color: white;
+      background-color: white;
+      color: black;
       font-size: 20px;
       font-weight: 500;
       border: none;
@@ -108,19 +108,15 @@
     .bottom-buttons {
       text-align: center;
     }
-
-    .cancelbtn {
-      background-color: #f44336;
-    }
   
     .container {
       text-align: center;
-      background-color: Silver;
-      color: black;
+      background-color: #0177CC;
+      color: white;
       border-radius: 30px;
       width: 600px;
       margin: auto;
-      margin-bottom: 400px;
+      margin-bottom: 40px;
       padding: 10px;
     }
 

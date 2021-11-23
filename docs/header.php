@@ -52,14 +52,13 @@ window.onclick = function(e) {
 
 <style>
   /* Colors:
-    Light Blue: #0B409C
-    Yellow: #FDBE34
-    Dark Blue: #0D226B
+    True Blue: #0177CC
+    Dark Vanilla: #E2C1A1
   */
 
   .navbar {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #0B409C;
+    background-color: #0177CC;
     position: fixed;
     left: 0;
     top: 0;
@@ -83,8 +82,8 @@ window.onclick = function(e) {
     width: fit-content;
     line-height: 14px;
     font-size: 16px;
-    font-weight: 550;
-    background-color: #0B409C;
+    font-weight: 500;
+    background-color: #0177CC;
     color: white;
     border: solid white 2px;
     cursor: pointer;
@@ -92,7 +91,7 @@ window.onclick = function(e) {
     margin: 5px 20px 5px 0px;
   }
 
-  .navbar-button:hover {background-color: white; color: #0B409C;}
+  .navbar-button:hover {background-color: white; color: #0177CC;}
 
   .dropdown {
     float: right;

@@ -79,8 +79,8 @@
     .about-section {
       padding: 50px;
       text-align: center;
-      background-color: #474e5d;
-      color: white;
+      background-color: #E2C1A1;
+      color: black;
     }
 
     .container {

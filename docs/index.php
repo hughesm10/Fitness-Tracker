@@ -45,7 +45,7 @@
   </div>
 
   <!-- stats section -->
-  <div style="background-color: #0B409C; color: white; padding-top: 64px; padding-bottom: 64px; text-align: center; display: inline-block; width: 100%;">
+  <div style="background-color: #0177CC; color: white; padding-top: 64px; padding-bottom: 64px; text-align: center; display: inline-block; width: 100%;">
     <div style="width: 25%; float: left;">
       <span style="font-size: 36px;">14+</span>
       <br>Trainers
@@ -70,7 +70,7 @@
   </div>
 
   <!-- Contact Us section -->
-  <div style="color: black; background-color: #FDBE34; text-align: center; display: inline-block; width: 100%; height: 200px;">
+  <div style="color: black; background-color: #E2C1A1; text-align: center; display: inline-block; width: 100%; height: 200px;">
     <div>
       <h1 style="font-size: 30px;">Contact Us</h1>
       <p>Let's get in touch. Send us a message:</p>
@@ -94,17 +94,7 @@
       transform: translate(-50%, -50%);
       font-size: 60px;
       text-align: center;
-      color: #FDBE34;
-    }
-
-    .user-text {
-      font-size: 25px;
-      font-weight: 600;
-      text-align: left;
-      color: black;
-      margin-top: 10px;
-      margin-left: 20px;
-      padding: 10px;
+      color: #0177CC;
     }
 
     .sub-text {
@@ -114,7 +104,7 @@
       transform: translate(-50%, -50%);
       font-size: 35px;
       text-align: center;
-      color: #FDBE34;
+      color: #0177CC;
     }
 
     .header-button {
@@ -128,9 +118,9 @@
       height: fit-content;   
       width: fit-content;
       font-weight: 500;
-      background-color: #0B409C;
+      background-color: #0177CC;
       color: white;
-      border: solid #0B409C 4px;
+      border: solid #0177CC 4px;
       cursor: pointer;
       margin: 0;
       padding: 10px;
@@ -140,7 +130,12 @@
       font-size: 25px;
       font-weight: 500;
       background-color: white;
-      color: #0B409C;
+      color: #0177CC;
+    }
+
+    .contact-button:hover {
+      background-color: #E2C1A1;
+      color: white;
     }
 
     .bottom-img {
@@ -156,9 +151,9 @@
       width: fit-content;
       font-size: 25px;
       font-weight: 500;
-      background-color: #0B409C;
+      background-color: #0177CC;
       color: white;
-      border: solid #0B409C 4px;
+      border: solid #0177CC 4px;
       cursor: pointer;
       margin: 0;
       padding: 10px;
