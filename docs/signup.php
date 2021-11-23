@@ -31,7 +31,7 @@
     <input type="password" placeholder="Confirm Password" name="pwdrepeat" id="pwdrepeat" required><br>
 
     <label style="width: fit-content">
-      <input type="checkbox" name="tos" id="tos" style="margin-bottom: 15px;" required> By creating an account, you agree to our <a href="tos.php" style="color: LightPurple">Terms & Conditions</a>.
+      <input type="checkbox" name="tos" id="tos" style="margin-bottom: 15px;" required> By creating an account, you agree to our <a href="tos.php" style="color: #E2C1A1">Terms & Conditions</a>.
     </label><br>
     
     <br>
@@ -41,7 +41,7 @@
       <button type="submit" class="signupbtn" name="submit">Sign Up</button>
     </div>
 
-    <p>Already have an account? <a href="login.php" style="color: LightPurple">Login</a>.</p>
+    <p>Already have an account? <a href="login.php" style="color: #E2C1A1">Login</a>.</p>
 
     <?php
       if (isset($_GET["error"])) {

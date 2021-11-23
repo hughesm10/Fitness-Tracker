@@ -29,7 +29,7 @@
       <button type="submit" class="signupbtn" name="submit">Login</button>
     </div>
 
-    <p>Don't have an account? <a href="signup.php" style="color: LightPurple">Sign Up</a>.</p>
+    <p>Don't have an account? <a href="signup.php" style="color: #E2C1A1">Sign Up</a>.</p>
 
     <?php
       if (isset($_GET["error"])) {
