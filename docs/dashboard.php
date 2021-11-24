@@ -30,6 +30,9 @@
         </div>
     </div>
     
+    <br>
+    <br>
+    
     <!-- Full-width columns: (hidden by default) -->
     <div id="b1" class="containerTab" style="display:none; background: #0B409C; text-align: center;">
         <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
@@ -108,17 +111,17 @@
         <h5>General Trends</h5>
         <p>Steps taken</p>
         <div style="color: black; background-color: gray; height: 40px; border-radius: 12px;">
-            <div style="width:25%; color: white; background-color: green; text-align: center; height: 40px; border-radius: 12px;">+25%</div>
+            <div style="width:25%; color: white; background-color: green; text-align: center; height: 40px; border-radius: 12px;"><br>+25%</div>
         </div>
 
         <p>Lift minutes</p>
         <div style="color: black; background-color: gray; height: 40px; border-radius: 12px;">
-            <div style="width:50%; color: white; background-color: orange; text-align: center; height: 40px; border-radius: 12px;">+50%</div>
+            <div style="width:50%; color: white; background-color: orange; text-align: center; height: 40px; border-radius: 12px;"><br>+50%</div>
         </div>
 
         <p>Calorie intake</p>
         <div style="color: black; background-color: gray; height: 40px; border-radius: 12px;">
-            <div style="width:75%; color: white; background-color: red; text-align: center; height: 40px; border-radius: 12px;">+75%</div>
+            <div style="width:75%; color: white; background-color: red; text-align: center; height: 40px; border-radius: 12px;"><br>+75%</div>
         </div>
     </div>
 
@@ -188,8 +191,12 @@
             color: white;
         }
 
+        table td {
+            border-radius: 10px;
+        }
+
         .row {
-            margin: 20px;
+            margin-left: 400px;
             width: 400px;
             height: 300px;
             display: grid;

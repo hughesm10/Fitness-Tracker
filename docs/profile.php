@@ -18,15 +18,21 @@
       <img src="img/nature-header.jpg" style="width: 100%;">
       <img class="profile-pic" src="img/IMG_0162.JPG">
       <br>
-        <div style="font-size: 30px;">Matthew Hughes</div>
-      <br>
-
-      <div class="menu-buttons" onclick="location.href='about.php';">About</div>
-      <div class="menu-buttons" onclick="location.href='timeline.php';">Timeline</div>
-      <div class="menu-buttons" onclick="location.href='dashboard.php';">Dashboard</div>
-      <div class="menu-buttons" onclick="location.href='contact.php';">Contact</div>
-      <div class="menu-buttons" onclick="location.href='includes/logoutinc.php';">Log Out</div>
-    
+      <?php
+            if(isset($_SESSION["userid"]))
+            {
+          ?>
+            <p style="font-size: 30px;"><?= $_SESSION['useruid']; ?></p>
+          <?php
+            }
+            else
+            {
+          ?>
+            <p style="font-size: 30px;">My Profile</p>
+          <?php
+            }
+          ?>
+      <br>  
     </div>
 
     <!--below cover area-->
@@ -37,33 +43,28 @@
           Friends<br>
 
           <div class="friends">
-            <img class="friends-img" src="img/IMG_0162.JPG">
-            <br>
-            First User
+            <img style="width: 80px; height: 80px; border-radius: 50%;" src="img/152319944-close-up-headshot-portrait-of-smiling-vietnamese-young-woman-look-at-camera-talk-on-video-call-profi.jpg">
+            Morgan Heath
           </div>
 
           <div class="friends">
-            <img class="friends-img" src="img/IMG_0162.JPG">
-            <br>
-            Second User
+            <img style="width: 80px; height: 80px; border-radius: 50%;" src="img/istockphoto-1131285202-612x612.jpg">
+            Stanley Hunter
           </div>
 
           <div class="friends">
-            <img class="friends-img" src="img/IMG_0162.JPG">
-            <br>
-            Third User
+            <img style="width: 80px; height: 80px; border-radius: 50%;" src="img/depositphotos_31203671-stock-photo-friendly-smiling-man.jpg">
+            William Banks
           </div>
 
           <div class="friends">
-            <img class="friends-img" src="img/IMG_0162.JPG">
-            <br>
-            Fourth User
+            <img style="width: 80px; height: 80px; border-radius: 50%;" src="img/istockphoto-1154642632-612x612.jpg">
+            Marie Rowe
           </div>
 
           <div class="friends">
-            <img class="friends-img" src="img/IMG_0162.JPG">
-            <br>
-            Fifth User
+            <img style="width: 80px; height: 80px; border-radius: 50%;" src="img/360_F_364211147_1qgLVxv1Tcq0Ohz3FawUfrtONzz8nq3e.jpg">
+            David Ingram
           </div>
 
         </div>
@@ -86,65 +87,62 @@
           <!--post 1-->
           <div class="post">
             <div>
-              <img src="img/IMG_0162.JPG" style="width: 75px;">
+              <img src="img/360_F_364211147_1qgLVxv1Tcq0Ohz3FawUfrtONzz8nq3e.jpg" style="width: 75px; border-radius: 50%;">
             </div>
             <div style="padding: 10px;">
-              <div style="font-weight: bold; color: #0B409C; font-size: 18px;">First Guy</div>
+              <div style="font-weight: bold; color: #0B409C; font-size: 18px;">David Ingram</div>
               <br>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Malesuada fames ac turpis egestas maecenas pharetra. Suscipit tellus mauris a diam. Accumsan lacus vel facilisis volutpat est velit egestas dui. Sagittis eu volutpat odio facilisis mauris. Massa placerat duis ultricies lacus sed turpis. Magna fringilla urna porttitor rhoncus dolor purus non enim praesent. Nulla facilisi cras fermentum odio eu. Viverra justo nec ultrices dui sapien eget mi proin sed. Id consectetur purus ut faucibus.
+                Just finished running a 5k running event at my local school in New Paltz. Feeling amazing right now!
               <br>
               <br>
-              <a href="">Like</a> . <a href="">Comment</a> . <span style="color: #999;">April 23 2020</span>
+              <a href="">Like</a> . <a href="">Comment</a> . <span style="color: #999;">August 4 2020</span>
             </div>
           </div>
 
           <!--post 2-->
           <div class="post">
             <div>
-              <img src="img/IMG_0162.JPG" style="width: 75px;">
+              <img src="img/152319944-close-up-headshot-portrait-of-smiling-vietnamese-young-woman-look-at-camera-talk-on-video-call-profi.jpg" style="width: 75px; border-radius: 50%;">
             </div>
             <div style="padding: 10px;">
-              <div style="font-weight: bold; color: #0B409C; font-size: 18px;">First Guy</div>
+              <div style="font-weight: bold; color: #0B409C; font-size: 18px;">Morgan Heath</div>
               <br>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Malesuada fames ac turpis egestas maecenas pharetra. Suscipit tellus mauris a diam. Accumsan lacus vel facilisis volutpat est velit egestas dui. Sagittis eu volutpat odio facilisis mauris. Massa placerat duis ultricies lacus sed turpis. Magna fringilla urna porttitor rhoncus dolor purus non enim praesent. Nulla facilisi cras fermentum odio eu. Viverra justo nec ultrices dui sapien eget mi proin sed. Id consectetur purus ut faucibus.
+              Anyone know any good at-home exercises for legs? I can't get to the gym and can't miss leg day!!
               <br>
               <br>
-              <a href="">Like</a> . <a href="">Comment</a> . <span style="color: #999;">April 23 2020</span>
+              <a href="">Like</a> . <a href="">Comment</a> . <span style="color: #999;">July 9 2020</span>
             </div>
           </div>
 
           <!--post 3-->
           <div class="post">
             <div>
-              <img src="img/IMG_0162.JPG" style="width: 75px;">
+              <img src="img/depositphotos_31203671-stock-photo-friendly-smiling-man.jpg" style="width: 75px; border-radius: 50%;">
             </div>
             <div style="padding: 10px;">
-              <div style="font-weight: bold; color: #0B409C; font-size: 18px;">First Guy</div>
+              <div style="font-weight: bold; color: #0B409C; font-size: 18px;">William Banks</div>
               <br>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Malesuada fames ac turpis egestas maecenas pharetra. Suscipit tellus mauris a diam. Accumsan lacus vel facilisis volutpat est velit egestas dui. Sagittis eu volutpat odio facilisis mauris. Massa placerat duis ultricies lacus sed turpis. Magna fringilla urna porttitor rhoncus dolor purus non enim praesent. Nulla facilisi cras fermentum odio eu. Viverra justo nec ultrices dui sapien eget mi proin sed. Id consectetur purus ut faucibus.
+                I went to the gym for the first time in 5 years today! It was a rough start, but I'm happy with how my session ended. I'm looking forward to the next one!
               <br>
               <br>
-              <a href="">Like</a> . <a href="">Comment</a> . <span style="color: #999;">April 23 2020</span>
+              <a href="">Like</a> . <a href="">Comment</a> . <span style="color: #999;">May 16 2020</span>
             </div>
           </div>
 
           <!--post 4-->
           <div class="post">
             <div>
-              <img src="img/IMG_0162.JPG" style="width: 75px;">
+              <img src="img/istockphoto-1131285202-612x612.jpg" style="width: 75px; border-radius: 50%;">
             </div>
             <div style="padding: 10px;">
-              <div style="font-weight: bold; color: #0B409C; font-size: 18px;">First Guy</div>
+              <div style="font-weight: bold; color: #0B409C; font-size: 18px;">Stanley Hunter</div>
               <br>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Malesuada fames ac turpis egestas maecenas pharetra. Suscipit tellus mauris a diam. Accumsan lacus vel facilisis volutpat est velit egestas dui. Sagittis eu volutpat odio facilisis mauris. Massa placerat duis ultricies lacus sed turpis. Magna fringilla urna porttitor rhoncus dolor purus non enim praesent. Nulla facilisi cras fermentum odio eu. Viverra justo nec ultrices dui sapien eget mi proin sed. Id consectetur purus ut faucibus.
+                Ashley, the trainer at Fitness Tracker, was sooooo helpful today! I reached a personal record in benching and leg press today! I recommend her for anyone looking for a personal trainer!
               <br>
               <br>
               <a href="">Like</a> . <a href="">Comment</a> . <span style="color: #999;">April 23 2020</span>
             </div>
           </div>
-
-
-          
 
 
         </div>
@@ -166,6 +164,7 @@
     .cover {
       width: 800px;
       margin: auto;
+      margin-top: 80px;
       min-height: 300px;
     }
 
@@ -176,19 +175,7 @@
       border: solid 2px white;
     }
 
-    .menu-buttons {
-      width: 100px;
-      display: inline-block;
-      margin: 2px;
-    }
-
-    .menu-buttons:hover {
-      cursor: pointer;
-      color: #0177CC;
-    }
-
     .friends-img {
-      width: 75px;
       float: left;
     }
 
@@ -238,6 +225,10 @@
     }
     
   </style>
+
+  <?php
+    include_once 'footer.php';
+  ?>
 
 </body>
 </html>

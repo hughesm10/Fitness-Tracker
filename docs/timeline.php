@@ -31,7 +31,7 @@
             else
             {
           ?>
-            <input type="button" class="navbar-button" value="Login" onclick="location.href='login.php';">
+            <p>My Profile</p>
           <?php
             }
           ?>
@@ -54,57 +54,57 @@
           <!--post 1-->
           <div class="post">
             <div>
-              <img src="img/IMG_0162.JPG" style="width: 75px;">
+              <img src="img/360_F_364211147_1qgLVxv1Tcq0Ohz3FawUfrtONzz8nq3e.jpg" style="width: 75px; border-radius: 50%;">
             </div>
             <div style="padding: 10px;">
-              <div style="font-weight: bold; color: #0B409C; font-size: 18px;">First Guy</div>
+              <div style="font-weight: bold; color: #0B409C; font-size: 18px;">David Ingram</div>
               <br>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Malesuada fames ac turpis egestas maecenas pharetra. Suscipit tellus mauris a diam. Accumsan lacus vel facilisis volutpat est velit egestas dui. Sagittis eu volutpat odio facilisis mauris. Massa placerat duis ultricies lacus sed turpis. Magna fringilla urna porttitor rhoncus dolor purus non enim praesent. Nulla facilisi cras fermentum odio eu. Viverra justo nec ultrices dui sapien eget mi proin sed. Id consectetur purus ut faucibus.
+                Just finished running a 5k running event at my local school in New Paltz. Feeling amazing right now!
               <br>
               <br>
-              <a href="">Like</a> . <a href="">Comment</a> . <span style="color: #999;">April 23 2020</span>
+              <a href="">Like</a> . <a href="">Comment</a> . <span style="color: #999;">August 4 2020</span>
             </div>
           </div>
 
           <!--post 2-->
           <div class="post">
             <div>
-              <img src="img/IMG_0162.JPG" style="width: 75px;">
+              <img src="img/152319944-close-up-headshot-portrait-of-smiling-vietnamese-young-woman-look-at-camera-talk-on-video-call-profi.jpg" style="width: 75px; border-radius: 50%;">
             </div>
             <div style="padding: 10px;">
-              <div style="font-weight: bold; color: #0B409C; font-size: 18px;">First Guy</div>
+              <div style="font-weight: bold; color: #0B409C; font-size: 18px;">Morgan Heath</div>
               <br>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Malesuada fames ac turpis egestas maecenas pharetra. Suscipit tellus mauris a diam. Accumsan lacus vel facilisis volutpat est velit egestas dui. Sagittis eu volutpat odio facilisis mauris. Massa placerat duis ultricies lacus sed turpis. Magna fringilla urna porttitor rhoncus dolor purus non enim praesent. Nulla facilisi cras fermentum odio eu. Viverra justo nec ultrices dui sapien eget mi proin sed. Id consectetur purus ut faucibus.
+              Anyone know any good at-home exercises for legs? I can't get to the gym and can't miss leg day!!
               <br>
               <br>
-              <a href="">Like</a> . <a href="">Comment</a> . <span style="color: #999;">April 23 2020</span>
+              <a href="">Like</a> . <a href="">Comment</a> . <span style="color: #999;">July 9 2020</span>
             </div>
           </div>
 
           <!--post 3-->
           <div class="post">
             <div>
-              <img src="img/IMG_0162.JPG" style="width: 75px;">
+              <img src="img/depositphotos_31203671-stock-photo-friendly-smiling-man.jpg" style="width: 75px; border-radius: 50%;">
             </div>
             <div style="padding: 10px;">
-              <div style="font-weight: bold; color: #0B409C; font-size: 18px;">First Guy</div>
+              <div style="font-weight: bold; color: #0B409C; font-size: 18px;">William Banks</div>
               <br>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Malesuada fames ac turpis egestas maecenas pharetra. Suscipit tellus mauris a diam. Accumsan lacus vel facilisis volutpat est velit egestas dui. Sagittis eu volutpat odio facilisis mauris. Massa placerat duis ultricies lacus sed turpis. Magna fringilla urna porttitor rhoncus dolor purus non enim praesent. Nulla facilisi cras fermentum odio eu. Viverra justo nec ultrices dui sapien eget mi proin sed. Id consectetur purus ut faucibus.
+                I went to the gym for the first time in 5 years today! It was a rough start, but I'm happy with how my session ended. I'm looking forward to the next one!
               <br>
               <br>
-              <a href="">Like</a> . <a href="">Comment</a> . <span style="color: #999;">April 23 2020</span>
+              <a href="">Like</a> . <a href="">Comment</a> . <span style="color: #999;">May 16 2020</span>
             </div>
           </div>
 
           <!--post 4-->
           <div class="post">
             <div>
-              <img src="img/IMG_0162.JPG" style="width: 75px;">
+              <img src="img/istockphoto-1131285202-612x612.jpg" style="width: 75px; border-radius: 50%;">
             </div>
             <div style="padding: 10px;">
-              <div style="font-weight: bold; color: #0B409C; font-size: 18px;">First Guy</div>
+              <div style="font-weight: bold; color: #0B409C; font-size: 18px;">Stanley Hunter</div>
               <br>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Malesuada fames ac turpis egestas maecenas pharetra. Suscipit tellus mauris a diam. Accumsan lacus vel facilisis volutpat est velit egestas dui. Sagittis eu volutpat odio facilisis mauris. Massa placerat duis ultricies lacus sed turpis. Magna fringilla urna porttitor rhoncus dolor purus non enim praesent. Nulla facilisi cras fermentum odio eu. Viverra justo nec ultrices dui sapien eget mi proin sed. Id consectetur purus ut faucibus.
+                Ashley, the trainer at Fitness Tracker, was sooooo helpful today! I reached a personal record in benching and leg press today! I recommend her for anyone looking for a personal trainer!
               <br>
               <br>
               <a href="">Like</a> . <a href="">Comment</a> . <span style="color: #999;">April 23 2020</span>
@@ -114,60 +114,60 @@
           <!--post 5-->
           <div class="post">
             <div>
-              <img src="img/IMG_0162.JPG" style="width: 75px;">
+              <img src="img/360_F_364211147_1qgLVxv1Tcq0Ohz3FawUfrtONzz8nq3e.jpg" style="width: 75px; border-radius: 50%;">
             </div>
             <div style="padding: 10px;">
-              <div style="font-weight: bold; color: #0B409C; font-size: 18px;">First Guy</div>
+              <div style="font-weight: bold; color: #0B409C; font-size: 18px;">David Ingram</div>
               <br>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Malesuada fames ac turpis egestas maecenas pharetra. Suscipit tellus mauris a diam. Accumsan lacus vel facilisis volutpat est velit egestas dui. Sagittis eu volutpat odio facilisis mauris. Massa placerat duis ultricies lacus sed turpis. Magna fringilla urna porttitor rhoncus dolor purus non enim praesent. Nulla facilisi cras fermentum odio eu. Viverra justo nec ultrices dui sapien eget mi proin sed. Id consectetur purus ut faucibus.
+                Feeling very sore after the gym, but hoping the results show soon!
               <br>
               <br>
-              <a href="">Like</a> . <a href="">Comment</a> . <span style="color: #999;">April 23 2020</span>
+              <a href="">Like</a> . <a href="">Comment</a> . <span style="color: #999;">April 15 2020</span>
             </div>
           </div>
 
           <!--post 6-->
           <div class="post">
             <div>
-              <img src="img/IMG_0162.JPG" style="width: 75px;">
+              <img src="img/152319944-close-up-headshot-portrait-of-smiling-vietnamese-young-woman-look-at-camera-talk-on-video-call-profi.jpg" style="width: 75px; border-radius: 50%;">
             </div>
             <div style="padding: 10px;">
-              <div style="font-weight: bold; color: #0B409C; font-size: 18px;">First Guy</div>
+              <div style="font-weight: bold; color: #0B409C; font-size: 18px;">Morgan Heath</div>
               <br>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Malesuada fames ac turpis egestas maecenas pharetra. Suscipit tellus mauris a diam. Accumsan lacus vel facilisis volutpat est velit egestas dui. Sagittis eu volutpat odio facilisis mauris. Massa placerat duis ultricies lacus sed turpis. Magna fringilla urna porttitor rhoncus dolor purus non enim praesent. Nulla facilisi cras fermentum odio eu. Viverra justo nec ultrices dui sapien eget mi proin sed. Id consectetur purus ut faucibus.
+                Been trying yoga for the past week! I feel more calm and relaxed in my day to day mindset!
               <br>
               <br>
-              <a href="">Like</a> . <a href="">Comment</a> . <span style="color: #999;">April 23 2020</span>
+              <a href="">Like</a> . <a href="">Comment</a> . <span style="color: #999;">April 4 2020</span>
             </div>
           </div>
 
           <!--post 7-->
           <div class="post">
             <div>
-              <img src="img/IMG_0162.JPG" style="width: 75px;">
+              <img src="img/depositphotos_31203671-stock-photo-friendly-smiling-man.jpg" style="width: 75px; border-radius: 50%;">
             </div>
             <div style="padding: 10px;">
-              <div style="font-weight: bold; color: #0B409C; font-size: 18px;">First Guy</div>
+              <div style="font-weight: bold; color: #0B409C; font-size: 18px;">William Banks</div>
               <br>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Malesuada fames ac turpis egestas maecenas pharetra. Suscipit tellus mauris a diam. Accumsan lacus vel facilisis volutpat est velit egestas dui. Sagittis eu volutpat odio facilisis mauris. Massa placerat duis ultricies lacus sed turpis. Magna fringilla urna porttitor rhoncus dolor purus non enim praesent. Nulla facilisi cras fermentum odio eu. Viverra justo nec ultrices dui sapien eget mi proin sed. Id consectetur purus ut faucibus.
+                Going on a 3 mile hike with my dog. He's so excited!!
               <br>
               <br>
-              <a href="">Like</a> . <a href="">Comment</a> . <span style="color: #999;">April 23 2020</span>
+              <a href="">Like</a> . <a href="">Comment</a> . <span style="color: #999;">March 16 2020</span>
             </div>
           </div>
 
           <!--post 8-->
           <div class="post">
             <div>
-              <img src="img/IMG_0162.JPG" style="width: 75px;">
+              <img src="img/istockphoto-1131285202-612x612.jpg" style="width: 75px; border-radius: 50%;">
             </div>
             <div style="padding: 10px;">
-              <div style="font-weight: bold; color: #0B409C; font-size: 18px;">First Guy</div>
+              <div style="font-weight: bold; color: #0B409C; font-size: 18px;">Stanley Hunter</div>
               <br>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Malesuada fames ac turpis egestas maecenas pharetra. Suscipit tellus mauris a diam. Accumsan lacus vel facilisis volutpat est velit egestas dui. Sagittis eu volutpat odio facilisis mauris. Massa placerat duis ultricies lacus sed turpis. Magna fringilla urna porttitor rhoncus dolor purus non enim praesent. Nulla facilisi cras fermentum odio eu. Viverra justo nec ultrices dui sapien eget mi proin sed. Id consectetur purus ut faucibus.
+                I'm having a hard time being productive at the gym? Anyone know what I can do to get better results at the gym?
               <br>
               <br>
-              <a href="">Like</a> . <a href="">Comment</a> . <span style="color: #999;">April 23 2020</span>
+              <a href="">Like</a> . <a href="">Comment</a> . <span style="color: #999;">March 3 2020</span>
             </div>
           </div>
 
@@ -244,6 +244,10 @@
     }
     
   </style>
+
+  <?php
+    include_once 'footer.php';
+  ?>
 
 </body>
 </html>

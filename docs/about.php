@@ -15,47 +15,40 @@
 
   <div class="about-section">
     <h1>About Us Page</h1>
-    <p>Some text about who we are and what we do.</p>
-    <p>Resize the browser window to see that this page is responsive by the way.</p>
+    <p>Fitness Tracker helps you stay motivated and improve your health by tracking your activity, exercise, food, and water intake.</p>
+    <p>Our trainers will support you to meet your goals in no time!</p>
   </div>
 
-  <h2 style="text-align:center">Our Team</h2>
+  <h2 style="text-align:center">Our Trainers</h2>
   <div class="row">
     <div class="column">
       <div class="card">
-        <img src="img/IMG_0162.JPG" alt="Jane" style="width:100%">
+        <img src="img/istockphoto-856797530-612x612.jpg" alt="Ashley" style="width:100%">
         <div class="container">
-          <h2>Jane Doe</h2>
-          <p class="title">CEO & Founder</p>
-          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-          <p>jane@example.com</p>
-          <p><button class="button">Contact</button></p>
+          <h2>Ashley</h2>
+          <p>Ashley is an undergraduate student at Georgetown University. 
+            She became a National Academy of Sports Medicine (NASM) Certified Personal Trainer in 2019, and is currently working toward a specialization in corrective exercise. 
+            A lifelong dancer, Ashley believes wholeheartedly that movement is a necessary component of physical and mental wellness and personal expression.</p>
         </div>
       </div>
     </div>
 
     <div class="column">
       <div class="card">
-        <img src="img/IMG_0162.JPG" alt="Mike" style="width:100%">
+        <img src="img/istockphoto-1072395722-612x612.jpg" alt="Mike" style="width:100%">
         <div class="container">
-          <h2>Mike Ross</h2>
-          <p class="title">Art Director</p>
-          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-          <p>mike@example.com</p>
-          <p><button class="button">Contact</button></p>
+          <h2>Mike</h2>
+          <p>Mike is a Certified Strength and Condition Specialist with the National Strength and Conditioning Association. He has an extensive background from training professional and amateur athletes to working with professionals in fitness. Mike approaches fitness as a life long behavior modification where we have continuous improvement. He defines his sessions efficient with an emphasis on proper form.</p>
         </div>
       </div>
     </div>
     
     <div class="column">
       <div class="card">
-        <img src="img/IMG_0162.JPG" alt="John" style="width:100%">
+        <img src="img/istockphoto-675179390-612x612.jpg" alt="James" style="width:100%">
         <div class="container">
-          <h2>John Doe</h2>
-          <p class="title">Designer</p>
-          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-          <p>john@example.com</p>
-          <p><button class="button">Contact</button></p>
+          <h2>James</h2>
+          <p>James holds a BS in Physical Education as well as a MS in Exercise Science and Health Promotion. He is a Certified Strength and Conditioning Specialist (CSCS). He has a background in health and fitness as well as athletic performance training with over 20 years of certification and experience in the field. His passion for fitness began through his love of sports and developed as a varsity athlete in basketball.</p>
         </div>
       </div>
     </div>
@@ -85,7 +78,7 @@
     }
 
     .container {
-      padding: 0 16px;
+      padding: 10px;
     }
 
     .container::after, .row::after {

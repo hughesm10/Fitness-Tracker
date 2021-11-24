@@ -35,13 +35,13 @@
       </div>
       <div style="width: 33%; float: left;">
         <img src="https://img.icons8.com/external-sbts2018-flat-sbts2018/58/000000/external-social-network-social-media-sbts2018-flat-sbts2018.png" style="width: 60px;">
-        <p style="font-size: 36px;">Social Feed</p>
-        <p>Connect and compete with your friends to reach new goals.</p>
+        <p style="font-size: 36px;">Timeline</p>
+        <p>Connect and share with your friends to reach new goals on the timeline.</p>
       </div>
       <div style="width: 33%; float: left;">
         <img src="https://img.icons8.com/external-flatart-icons-flat-flatarticons/64/000000/external-goals-user-interface-flatart-icons-flat-flatarticons.png" style="width: 58px;">
         <p style="font-size: 36px;">Create Goals</p>
-        <p>Set goals to reach and mark your progression.</p>
+        <p>Set goals to mark your progression and reach new goals.</p>
       </div>
 
     </div>
@@ -50,7 +50,7 @@
   <!-- stats section -->
   <div style="background-color: #0177CC; color: white; padding-top: 64px; padding-bottom: 64px; text-align: center; display: inline-block; width: 100%;">
     <div style="width: 25%; float: left;">
-      <span style="font-size: 36px;">14+</span>
+      <span style="font-size: 36px;">10+</span>
       <br>Trainers
     </div>
     <div style="width: 25%; float: left;">
@@ -58,7 +58,7 @@
       <br>Exercises
     </div>
     <div style="width: 25%; float: left;">
-      <span style="font-size: 36px;">89+</span>
+      <span style="font-size: 36px;">59+</span>
       <br>Members
     </div>
     <div style="width: 25%; float: left;">
@@ -122,7 +122,7 @@
 
     .about-button {
       position: absolute;
-      top: 730px;
+      top: 780px;
       left: 50%;
       transform: translate(-50%, -50%);
       font-size: 20px;

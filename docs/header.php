@@ -88,7 +88,7 @@ window.onclick = function(e) {
     border: solid white 2px;
     cursor: pointer;
     padding: 6px 14px;
-    margin: 4px 10px 5px 0px;
+    margin: 4px 30px 5px 0px;
   }
 
   .navbar-button:hover {background-color: white; color: #0177CC;}
