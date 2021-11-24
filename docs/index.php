@@ -23,8 +23,9 @@
 
   <!-- About Section -->
   <div style="padding: 20px;">
-    <h1 style="text-align: center; display: inline-block; width: 100%; font-size: 24px;">ABOUT FITNESS TRACKER</h1>
-    <p style="text-align: center; display: inline-block; width: 100%; font-size: 18px;">Key features of the website</p>
+    <h1 style="text-align: center; display: inline-block; width: 100%; font-size: 24px;">ABOUT FITNESS TRACKER</h1><br>
+    <p style="text-align: center; display: inline-block; width: 100%; font-size: 18px;">Key features of the website</p><br>
+    <br>
     <input type="button" class="about-button" value="About Us" onclick="location.href='about.php';">
     <br>
     <div style="margin-top:80px; padding: 0 8px; text-align: center;">
@@ -122,7 +123,6 @@
 
     .about-button {
       position: absolute;
-      top: 780px;
       left: 50%;
       transform: translate(-50%, -50%);
       font-size: 20px;
@@ -140,15 +140,11 @@
     }
 
     .header-button:hover {
-      font-size: 25px;
-      font-weight: 500;
       background-color: white;
       color: #0177CC;
     }
 
     .about-button:hover {
-      font-size: 20px;
-      font-weight: 500;
       background-color: white;
       color: #0177CC;
     }
