@@ -14,9 +14,8 @@
     <div class="dropdown">
     <input type="image" class="dropbtn" src="https://img.icons8.com/ios-glyphs/30/ffffff/user--v1.png" width="40" height="40" style="padding: 0; margin-right: 30px;" onclick="myFunction();">
       <div class="dropdown-content" id="myDropdown">
-        <a href="profile.php">Profile</a>
         <a href="dashboard.php">Dashboard</a>
-        <a href="includes/logoutinc.php">Log Out</a>
+        <a href="includes/logoutinc.php">Log out</a>
       </div>
     </div>
   <?php
@@ -117,13 +116,14 @@ window.onclick = function(e) {
     top: 50px;
     right: 30px;
     background-color: #E2C1A1;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     border-radius: 12px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
 
   .dropdown-content a {
     color: black;
+    border-radius: 12px;
     font-size: 18px;
     padding: 8px 16px;
     text-decoration: none;
@@ -134,7 +134,14 @@ window.onclick = function(e) {
 
   .dropdown-content a:hover {
     border-radius: 12px;
+    border: 2px solid white;
     color: white;
+    font-size: 18px;
+    padding: 6px 14px;
+    text-decoration: none;
+    text-align: left;
+    display: block;
+    width: 100px;
   }
 
   .show {display: block;}

@@ -26,8 +26,8 @@
     <input type="password" placeholder="Enter Password" name="pwd" id="pwd" required><br>
 
     <div class="bottom-buttons">
-      <button type="reset" class="cancelbtn">Cancel</button>
-      <button type="submit" class="signupbtn" name="submit">Login</button>
+      <button type="reset">Cancel</button>
+      <button type="submit" name="submit">Login</button>
     </div>
 
     <p>Don't have an account? <a href="signup.php" style="color: #E2C1A1">Sign Up</a>.</p>

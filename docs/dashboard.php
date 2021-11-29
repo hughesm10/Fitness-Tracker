@@ -10,10 +10,28 @@
 
     <?php
         include_once 'header.php';
-    ?> 
+    ?>
 
-    <h1 style="padding: 20px; font-size: 40px;">Trend Overview</h1>
-
+    <div style="background-color: white; text-align: center;">
+      <img src="img/nature-header.jpg" style="width: 100%; height: 300px;">
+      <img src="img/IMG_0162.jpg" class="profile-pic">
+      <?php
+            if(isset($_SESSION["userid"]))
+            {
+          ?>
+            <p style="font-size: 40px; font-weight: 600;"><?= $_SESSION['useruid']; ?>'s Dashboard</p>
+          <?php
+            }
+            else
+            {
+          ?>
+            <p style="font-size: 40px; font-weight: 600;">My Dashboard</p>
+          <?php
+            }
+          ?>
+    </div>
+    
+    <h5 style="padding: 20px;">Trend Overview</h5>
     <!-- Four columns -->
     <div class="row">
         <div class="column" onclick="openTab('b1');" style="background-color: #0B409C;">
@@ -65,7 +83,8 @@
         <p><img src="https://img.icons8.com/ios-filled/64/ffffff/long-arrow-up.png"/>
             Calories are trending up</p>
     </div>
-    
+  
+
     <div style="padding: 20px;">
         <h5>Recent Data Added</h5>
         <table style="width: 100%;">
@@ -196,7 +215,7 @@
         }
 
         .row {
-            margin-left: 400px;
+            margin-left: 30px;
             width: 400px;
             height: 300px;
             display: grid;
@@ -212,6 +231,13 @@
             color: white;
             font-size: 35px;
             cursor: pointer;
+        }
+
+        .profile-pic {
+            width: 150px;
+            margin-top: -400px;
+            border-radius: 50%;
+            border: solid 2px white;
         }
     </style>
 

@@ -1,23 +1,13 @@
 <?php
 
-if (isset($_POST["submit"])) {
-    
-    $username = $_SESSION["userid"];
-    $post = $_POST["post"];
-    $date = CURDATE();
 
-    require_once 'dbhinc.php';
-    require_once 'functionsinc.php';
+$serverName = "localhost";
+$dBUsername = "root";
+$dBPassword = "";
+$dBName = "fitnesstracker";
 
-    if (emptyInputPost($post) !== false) {
-        header("Location: ../profile.php?error=emptypost");
-        exit();
-    }
+$conn = mysqli_connect("localhost", "root", "", "fitnesstracker");
 
-    createPost($conn, $username, $post, $date);
-
-} 
-else {
-    header("Location: ../profile.php");
-    exit();
+if (!$conn) {
+    die("<script>alert('Connection failed.')</script>");
 }
