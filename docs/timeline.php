@@ -11,17 +11,26 @@
   <?php
     include_once 'header.php';
 
-    include_once 'postinc.php';
+    $serverName = "localhost";
+    $dBUsername = "root";
+    $dBPassword = "";
+    $dBName = "fitnesstracker";
 
-    if (isset($_POST['submit'])) {
+    $conn = mysqli_connect($serverName, $dBUsername, $dBPassword, $dBName);
+    if (!$conn) {
+      die("<script>alert('Connection failed.')</script>");
+    }
+
+
+    if(isset($_POST['submit'])) {
       $name = $_POST['name'];
       $title = $_POST['title'];
       $text = $_POST['text'];
 
-      $sql = "INSERT INTO posts (name, title, text) VALUES ('$name', '$title', '$text')";
+      $sql = "INSERT INTO posts (name, title, text) VALUES ('$name', '$title', '$text');";
       $result = mysqli_query($conn, $sql);
-      if($result)
-      {
+      
+      if ($result) {
         echo "<script>alert('Post added successfully!')</script>";
       } else {
         echo "<script>alert('Post added unsuccessfully.')</script>";
@@ -30,47 +39,165 @@
   ?>
 
   <div class="container">
-
-    <form action="" method="post" class="form">
+    <form action="" method="POST" class="form">
       <div class="row">
         <div class="input-group">
           <label for="name">Name</label>
-          <input type="text" id="name" name="name" placeholder="Enter Name" value="<?php echo $name; ?>" required>
+          <input type="text" id="name" name="name" placeholder="Enter Name" required>
         </div>
         <div class="input-group">
           <label for="title">Title</label>
-          <input type="text" id="title" name="title" placeholder="Enter Title" value="<?php echo $title; ?>" required>
+          <input type="text" id="title" name="title" placeholder="Enter Title" required>
         </div>
       </div>
       <div class="input-group textarea">
         <label for="text">Text</label>
-        <textarea name="text" id="text" name="text" style="resize: none;" placeholder="Enter Text" required><?php echo $text; ?></textarea>
+        <textarea name="text" id="text" name="text" style="resize: none;" placeholder="Enter Text" required></textarea>
       </div>
       <div class="input-group">
         <button name="submit" class="btn">Post</button>
       </div>
     </form>
+    <div class="prev-posts">
+      <?php
 
+      $sql = "SELECT * FROM posts";
+      $result = mysqli_query($conn, $sql);
+      if(mysqli_num_rows($result) > 0) 
+      {
+        while($row = mysqli_fetch_assoc($result)) {
+
+      ?>
+      <div class="single-item">
+        <h4><?php echo $row['name']; ?></h4>
+        <p><?php echo $row['title']; ?></p>
+        <p><?php echo $row['text']; ?></p>
+      </div>
+      <?php
+
+        }
+      }
+
+      ?>
+    </div>
   </div>
 
   <style>
-    body {
+
+    * {
       margin: 0; 
       padding: 0; 
-      font-family: Arial, Helvetica, sans-serif; 
-      margin-top: 40px;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background: lightgrey;
     }
 
     .container {
-      width: 800px;
-      margin: auto;
-      display: flex;
-    }   
-  </style>
+      padding: 20px;
+      background: white;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+      width: 600px;
+      min-height: 400px;
+      margin: 20px 0;
+    }
 
-  <?php
-    include_once 'footer.php';
-  ?>
+    .container .row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    .container .form .row .input-group {
+      padding: 0 10px;
+      display: block;
+    }
+
+    .container .form .row .input-group:first-child {
+      padding-left: 0;
+    }
+
+    .container .form .row .input-group:last-child {
+      padding-right: 0;
+    }
+    
+    .container .form .input-group {
+      width: 100%;
+      height: 50px;
+      margin-bottom: 50px;
+    }
+
+    .container .form .input-group label {
+      font-weight: 600;
+      margin-bottom: 5px;
+      display: block;
+    }
+
+    .container .form .input-group .btn {
+      margin: 20px 0;
+      display: block;
+      padding: .7rem 2rem;
+      opacity: .8;
+      color: white;
+      background: #0177CC;
+      border: none;
+      outline: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: .3s ease-in;
+    }
+
+    .container .form .input-group .btn:hover {
+      opacity: 1;
+    }
+
+    .container .form .input-group input, .container .form .input-group textarea {
+      width: 100%;
+      height: 100%;
+      border: 1px solid black;
+      outline: none;
+      padding: 5px 10px;
+    }
+
+    .container .form .input-group.textarea {
+      height: 200px;
+    }
+
+    .container .form .input-group.textarea textarea {
+      resize: none;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .container .prev-posts {
+      margin-top: 50px;
+    }
+
+    .container .prev-posts .single-item {
+      background: white;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+      padding: 10px 20px;
+      text-align: left;
+      margin-bottom: 25px;
+    }
+
+    .container .prev-posts .single-item h4 {
+      font-size: 1.3rem;
+      font-weight: 800;
+    }
+
+    .container .prev-posts .single-item p {
+      font-size: .9rem;
+ 
+    }
+  </style>
 
 </body>
 </html>
