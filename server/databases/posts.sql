@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 24, 2021 at 05:50 AM
+-- Generation Time: Dec 01, 2021 at 06:50 AM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.10
 
@@ -28,11 +28,22 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `posts` (
-  `postsId` int(11) NOT NULL,
-  `usersId` int(11) DEFAULT NULL,
-  `postsText` text NOT NULL,
-  `postsDate` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
+  `id` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `subject` varchar(255) NOT NULL,
+  `text` mediumtext NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `posts`
+--
+
+INSERT INTO `posts` (`id`, `name`, `subject`, `text`) VALUES
+(1, 'yhuyrutyhrtu', 'tyrurtyutrutru', 'nffgjhnfguhytuhtruhty'),
+(2, 'gyrterteygrteygret', 'rgyteretygretygr', 'ygrteretygretygre'),
+(3, 'test post name', 'test post subject', 'test post text'),
+(4, 'hughesm10', 'another test post subject', 'another test post text'),
+(5, 'hughesm24', 'test post!', 'testttttttttt');
 
 --
 -- Indexes for dumped tables
@@ -42,8 +53,7 @@ CREATE TABLE `posts` (
 -- Indexes for table `posts`
 --
 ALTER TABLE `posts`
-  ADD PRIMARY KEY (`postsId`),
-  ADD KEY `usersId` (`usersId`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -53,17 +63,7 @@ ALTER TABLE `posts`
 -- AUTO_INCREMENT for table `posts`
 --
 ALTER TABLE `posts`
-  MODIFY `postsId` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- Constraints for dumped tables
---
-
---
--- Constraints for table `posts`
---
-ALTER TABLE `posts`
-  ADD CONSTRAINT `posts_ibfk_1` FOREIGN KEY (`usersId`) REFERENCES `users` (`usersId`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
