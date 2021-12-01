@@ -10,55 +10,52 @@
 
   <?php
     include_once 'header.php';
+    include 'includes/dbhinc.php';
 
-    $serverName = "localhost";
-    $dBUsername = "root";
-    $dBPassword = "";
-    $dBName = "fitnesstracker";
-
-    $conn = mysqli_connect($serverName, $dBUsername, $dBPassword, $dBName);
-    if (!$conn) {
-      die("<script>alert('Connection failed.')</script>");
-    }
-
-
-    if(isset($_POST['submit'])) {
+    if (isset($_POST['submit'])) {
+    
       $name = $_POST['name'];
-      $title = $_POST['title'];
+      $subject = $_POST['subject'];
       $text = $_POST['text'];
-
-      $sql = "INSERT INTO posts (name, title, text) VALUES ('$name', '$title', '$text');";
+  
+      $sql = "INSERT INTO posts (name, subject, text) VALUES ('$name', '$subject', '$text')";
       $result = mysqli_query($conn, $sql);
-      
       if ($result) {
-        echo "<script>alert('Post added successfully!')</script>";
-      } else {
-        echo "<script>alert('Post added unsuccessfully.')</script>";
+        echo "<script>alert('Post added succesfully!')</script>";
+      }
+      else {
+        echo "<script>alert('Post did not add succesfully.')</script>";
       }
     }
+
   ?>
 
   <div class="container">
     <form action="" method="POST" class="form">
+    <h1>Create Post</h1>
+    <br>
       <div class="row">
         <div class="input-group">
           <label for="name">Name</label>
           <input type="text" id="name" name="name" placeholder="Enter Name" required>
         </div>
         <div class="input-group">
-          <label for="title">Title</label>
-          <input type="text" id="title" name="title" placeholder="Enter Title" required>
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="Enter Subject" required>
         </div>
       </div>
       <div class="input-group textarea">
         <label for="text">Text</label>
-        <textarea name="text" id="text" name="text" style="resize: none;" placeholder="Enter Text" required></textarea>
+        <textarea name="text" id="text" name="text" style="resize: none; width: 96%;" placeholder="Enter Text" required></textarea>
       </div>
       <div class="input-group">
-        <button name="submit" class="btn">Post</button>
+        <button name="submit" class="btn">Submit</button>
       </div>
     </form>
+    
     <div class="prev-posts">
+    <h1>Timeline</h1>
+    <br>
       <?php
 
       $sql = "SELECT * FROM posts";
@@ -70,7 +67,7 @@
       ?>
       <div class="single-item">
         <h4><?php echo $row['name']; ?></h4>
-        <p><?php echo $row['title']; ?></p>
+        <p><?php echo $row['subject']; ?></p>
         <p><?php echo $row['text']; ?></p>
       </div>
       <?php
@@ -87,13 +84,13 @@
     * {
       margin: 0; 
       padding: 0; 
-      box-sizing: border-box;
       font-family: Arial, Helvetica, sans-serif;
     }
 
     body {
       width: 100%;
       min-height: 100vh;
+      margin-top: 60px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -160,9 +157,10 @@
     }
 
     .container .form .input-group input, .container .form .input-group textarea {
-      width: 100%;
+      width: 88%;
       height: 100%;
-      border: 1px solid black;
+      border: 1.5px solid black;
+      border-radius: 12px;
       outline: none;
       padding: 5px 10px;
     }
@@ -198,6 +196,10 @@
  
     }
   </style>
+
+  <?php
+    include_once 'footer.php';
+  ?>
 
 </body>
 </html>

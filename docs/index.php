@@ -23,8 +23,8 @@
 
   <!-- About Section -->
   <div style="padding: 20px;">
-    <h1 style="text-align: center; display: inline-block; width: 100%; font-size: 24px;">ABOUT FITNESS TRACKER</h1><br>
-    <p style="text-align: center; display: inline-block; width: 100%; font-size: 18px;">Key features of the website</p><br>
+    <h1 style="text-align: center; display: inline-block; width: 100%; font-size: 24px;">ABOUT FITNESS TRACKER</h1>
+    <p style="text-align: center; display: inline-block; width: 100%; font-size: 18px; margin-top: 0;">Key features of the website</p><br>
     <br>
     <input type="button" class="about-button" value="About Us" onclick="location.href='about.php';">
     <br>

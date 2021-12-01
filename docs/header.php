@@ -113,6 +113,7 @@ window.onclick = function(e) {
   .dropdown-content {
     display: none;
     position: absolute;
+    min-width: 100px;
     top: 50px;
     right: 30px;
     background-color: #E2C1A1;
