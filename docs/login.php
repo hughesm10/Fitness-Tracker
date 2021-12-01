@@ -41,7 +41,7 @@
           echo "<p style='font-size:25px;color:red;'>Incorrect login!</p>";
         }
         elseif ($_GET["error"] == "none") {
-          header("Location: profile.php");
+          header("Location: login.php");
           exit();
         }
       }
