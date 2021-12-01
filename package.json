@@ -2,7 +2,7 @@
     "name": "fitnesstracker",
     "version": "1.0.0",
     "scripts": {
-        "start": "node server/index"
+        "start": "index"
     },
     "repository": {
         "type": "git",
