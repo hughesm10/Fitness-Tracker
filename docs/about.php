@@ -54,20 +54,23 @@
     </div>
   </div>
 
-
   <style>
     body {margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; margin-top: 40px;}
 
     .column {
       float: left;
-      width: 30%;
+      width: 32%;
       margin-bottom: 16px;
-      padding: 0 8px;
+      padding: 0 10px;
     }
+
+    .row {margin-left: 40px;}
 
     .card {
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-      margin: 8px;
+      padding: 16px;
+      text-align: center;
+      background-color: lightgrey;
     }
 
     .about-section {
@@ -75,36 +78,6 @@
       text-align: center;
       background-color: #E2C1A1;
       color: black;
-    }
-
-    .container {
-      padding: 10px;
-    }
-
-    .container::after, .row::after {
-      content: "";
-      clear: both;
-      display: table;
-    }
-
-    .title {
-      color: grey;
-    }
-
-    .button {
-      border: none;
-      outline: 0;
-      display: inline-block;
-      padding: 8px;
-      color: white;
-      background-color: #000;
-      text-align: center;
-      cursor: pointer;
-      width: 100%;
-    }
-
-    .button:hover {
-      background-color: #555;
     }
  
   </style>

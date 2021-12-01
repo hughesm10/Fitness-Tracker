@@ -12,7 +12,7 @@
     include_once 'header.php';
   ?>
     
-  <h1>Terms and Conditions</h1>
+  <h1 style="padding: 20px;">Terms and Conditions</h1>
   <div class="tos-text">
     <p>These terms and conditions (“Agreement”) set forth the general terms and conditions of your use of the fitness-tracker.com website (“Website” or
       “Service”) and any of its related products and services (collectively, “Services”). This Agreement is legally binding
@@ -139,7 +139,7 @@
   <style>
     * {box-sizing: border-box;}
   
-    body{margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; margin-top: 40px;}
+    body{margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; margin-top: 60px;}
 
     .tos-text {
       margin-left: 50px;

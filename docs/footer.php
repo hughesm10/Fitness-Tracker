@@ -10,22 +10,24 @@
   */
 
   footer {
-    display: table;
-    background-color: #0177CC;
-    width: 100%;
-    height: 200px;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #0177CC;
+    color: white;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
-  footer h1, footer p {
+  footer h1 {
+    margin-top: auto;
     font-size: 40px;
-    font-weight: 500;
-    color: white;
-    text-align: center;
-    line-height: 100px;
   }
 
   footer p {
+    margin-bottom: auto;
     font-size: 20px;
   }
+
 </style>

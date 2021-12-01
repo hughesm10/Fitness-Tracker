@@ -49,7 +49,7 @@
   </div>
 
   <!-- stats section -->
-  <div style="background-color: #0177CC; color: white; padding-top: 64px; padding-bottom: 64px; text-align: center; display: inline-block; width: 100%;">
+  <div style="background-color: #E2C1A1; color: black; padding-top: 64px; padding-bottom: 64px; text-align: center; display: inline-block; width: 100%;">
     <div style="width: 25%; float: left;">
       <span style="font-size: 36px;">10+</span>
       <br>Trainers
